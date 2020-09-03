@@ -1,0 +1,78 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+/* @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css); */
+@import url(https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css);
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+/* @import url(https://cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-subset.css); */
+
+html, body {width: 100%; height: 100%; font-family: 'Hack', 'NanumSquareRound', monospace; font-weight: 400; font-size: 16px; color: #000000; background-color: #ffffff; line-height: 1.3;}
+html, body, div, ul, li, p, h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0; box-sizing: border-box; display: block; letter-spacing: 0;}
+ul, li {list-style: none;}
+a, a:link, a:visited, a:active, a:hover {text-decoration: none; word-break: break-all; color: #0366d6; border-bottom: 1px solid #0366d6; font-weight: 700;}
+img {vertical-align: bottom;}
+
+/*
+#header {position: fixed; left: 0; top: 0; width: 100vw; height: 80px; background-color: #ffffff;}
+#header > div {position: relative; max-width: 1024px; width: 100%; height: 48px; margin: 0 auto;}
+#nav {position: absolute; left: 10px; bottom: 5px;}
+*/
+#page-title h1 {margin: 0 0 48px 0; font-size: 34px;}
+#page-title div {margin-top: -48px; color: #999999; font-size: 14px;}
+
+#content {line-height: 24px;}
+#content h2 {margin: 48px 0 24px 0; font-size: 24px;}
+#content h2:before {content: "#"; display: inline-block; width: 24px;}
+#content p {margin: 24px 0;}
+#content pre {margin: 0; overflow-x: auto;}
+
+#content ul {font-size: 16px; background-color: #eeeeee; padding: 12px;}
+#content blockquote,
+#content > ul,
+#content pre {margin: 24px 0; font-size: 16px; background-color: #eeeeee; padding: 12px;}
+#content ul li {margin-left: 18px;}
+#content ul li:before {content:'\2022'; display: inline-block; margin-left: -18px; width: 18px;}
+#content blockquote p {margin: 0;}
+#content .cap {margin-top: -24px; font-size: 14px; background-color: inherit; text-align: center; color: #999999;}
+
+#content img {text-align: center; max-width: 100%;}
+#content .center {text-align: center;}
+
+#content pre,
+#content code,
+#content kbd,
+#content samp {font-family: 'Hack', 'NanumSquareRound', monospace; font-size: 16px; background-color: #eeeeee;}
+#content pre code {font-size: 14px; line-height: 1.3; background-color: transparent; margin: 0;}
+
+#content strong,
+#content b {font-weight: 700; color: #b52b27; border-bottom: 1px solid #b52b27;}
+#content .warn {color: #b52b27; background-color: #fdf7f7; margin: 24px 0; font-size: 16px; padding: 12px;}
+
+#main, #footer, #header {width: 100%; height: auto; clear: both;}
+#header > div {max-width: 1024px; width: 100%; margin: 0 auto; padding: 10px 0;}
+#main > div {max-width: 1024px; width: 100%; margin: 0 auto; padding: 48px 10px 10px 10px;}
+#footer > div {max-width: 1024px; width: 100%; margin: 0 auto; padding: 60px 10px 48px 10px;}
+
+#footer-msg {font-size: 14px; color: #999999; text-align: center;}
+
+#header-title {margin: 10px; font-size: 16px;}
+#header li {display: inline-block; padding: 5px 10px;}
+
+#cat-title h1, 
+#tag-title h1 {margin: 0 0 48px 0; font-size: 34px;}
+.post-list {margin: 16px 0 16px 16px;}
+#cat-content h2,
+#tag-content h2 {font-size: 16px; display: inline-block;}
+#cat-content h2:before,
+#tag-content h2:before {content: ">"; display: inline-block; width: 16px; margin-left: -16px;}
+#cat-content .post-desc,
+#tag-content .post-desc {color: #999999; font-size: 14px; display: inline-block;}
+
+.utterances {max-width: none !important;}
+
+.ad-wrapper {letter-spacing: -16px;}
+.ad-inner {display: inline-block; width: 33.3333%; text-align: center; letter-spacing: normal; margin: 5px 0; min-height: 250px; vertical-align: bottom;}
+.small-size {width: 300px; height: 250px;}
+@media screen and (max-width: 1023px) {
+  .ad-inner {width: 100%;}
+}
+
+.msg {display: inline-block; padding: 0 4px;}
