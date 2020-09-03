@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:url" content="{{ site.url }}">
+    <!-- <meta property="og:image" content="/img/profile.png"> -->
+    <meta property="og:description" content="{{ site.description }}">
+    <title>{{ site.title }}</title>
+    <!-- <link rel="shortcut icon" href="/img/favicon.ico"> -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+  </head>
+  <body>
+    <div id="header">
+      <div>
+        <div id="header-title">{{ site.title }}: {{ site.url }}</div>
+        
+        {% include nav.html %}
+        
+      </div>
+    </div>
+    <div id="main">
+      <div>
+      
+        {{ content }}
+        
+      </div>
+    </div>
+    <div id="footer">
+      <div>
+        <div id="footer-msg">
+          <div class="msg">This blog is powered by Github,</div><div class="msg">and designed by Zininote.</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
