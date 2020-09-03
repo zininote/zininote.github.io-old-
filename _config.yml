@@ -1,1 +1,5 @@
-theme: jekyll-theme-minimal
+title: 찌니노트
+url: zininote.github.io
+description: 찌니의 개인적인 관심사항과 기록하고싶은 자료들 포스팅
+permalink: /posts/:title
+markdown: kramdown
