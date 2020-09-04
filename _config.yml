@@ -1,5 +1,5 @@
 title: 찌니노트
 url: https://zininote.github.io
-description: 찌니의 개인적인 관심사항과 기록하고싶은 자료들 포스팅
+description: 찌니의 관심사항 모음노트
 permalink: /posts/:title
 markdown: kramdown
