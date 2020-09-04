@@ -13,7 +13,7 @@ cat: excel
 
 ## 함수식
 
-![그림00](zininote.github.io/img/excel/excel-0002-01-01-00.png)
+![그림00](https://zininote.github.io/img/excel/excel-0002-01-01-00.png)
 {:.center}
 
 ```excel
