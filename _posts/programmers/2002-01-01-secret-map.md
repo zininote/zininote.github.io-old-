@@ -22,4 +22,4 @@ def solution(n, arr1, arr2):
     def solution(n, arr1, arr2):
 ```
 
-위 코드에서 2 진법 변환을 위해 `format` 메서드를 사용하였다. 진법 변환 알고리즘과 그 코드를 소개한 [별도의 포스팅](https://tedblog.github.io/posts/convert-number-system)도 있으니 관심있다면 참고해보기 바란다.
+위 코드에서 2 진법 변환을 위해 `format` 메서드를 사용하였다. 진법 변환 알고리즘과 그 코드를 소개한 [별도의 포스팅](https://zininote.github.io/posts/convert-number-system)도 있으니 관심있다면 참고해보기 바란다.
