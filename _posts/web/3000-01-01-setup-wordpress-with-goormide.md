@@ -1,7 +1,7 @@
 ---
 layout: post-web
 title: "구름 IDE 에서 워드프레스 설치하기"
-updated: 2020-07-21
+updated: 2020-09-04
 cat: web
 ---
 
