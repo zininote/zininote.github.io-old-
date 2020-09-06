@@ -26,7 +26,7 @@ def solution(s):
             a[i] = a[i].lower() if i%2 else a[i].upper()
         return ''.join(a)
     
-    # 2. re.sub 으로 단어 매칭, 치환하여 리턴
+    # 2. 정규식으로 단어 매칭, fn 함수로 전달, 치환하여 리턴
     return re.sub(r'\w+', fn, s)
 ```
 
