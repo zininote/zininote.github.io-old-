@@ -69,9 +69,9 @@ img {vertical-align: bottom;}
 .utterances {max-width: none !important;}
 
 .ad-wrapper {letter-spacing: -16px;}
-.ad-inner {display: inline-block; width: 33.3333%; text-align: center; letter-spacing: normal; margin: 5px 0; min-height: 250px; vertical-align: bottom;}
+.ad-inner {display: inline-block; width: 50%; text-align: center; letter-spacing: normal; margin: 5px 0; min-height: 250px; vertical-align: bottom;}
 .small-size {width: 300px; height: 250px;}
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
   .ad-inner {width: 100%;}
 }
 
