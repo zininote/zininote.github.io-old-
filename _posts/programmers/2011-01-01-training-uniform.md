@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-programmers
 title: "LV1: 체육복"
 updated: 2020-09-07
 cat: programmers
