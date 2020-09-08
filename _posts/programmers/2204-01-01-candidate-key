@@ -124,56 +124,54 @@ def gen_combis(n):
 
 ## 수정
 
-다른풀이를 보다보니 비트연산을 사용한 훌륭한 방법이 있었다. 예를들면 필드 개수가 4 인 경우 `range(1, 1 << 4)` 라고 해보자. 그럼 1 부터 31 까지를 나타내는데, 이는 2 진수로 0000 부터 1111 이다. 눈치챈 독자들도 있겠지만 비트 한자리가 필드 한자리와 매칭이 되도록 보는 방식이다. 2 진수로 1 ... 31 은 0001, 0010, 0011, 0100, 0101, ... , 1111 이렇게 표현되기 때문이다. 그리고 이렇게 하면 조합을 굳이 별도로 구현할 필요도 없다.
+다른풀이를 보다보니 비트연산을 사용한 훌륭한 방법이 있었다. 예를들면 필드 개수가 4 인 경우 `range(1, 1 << 4)` 라고 해보자. 그럼 1 부터 31 까지를 나타내는데, 이는 2 진수로 0000 부터 1111 이다. 
+
+눈치챈 분들도 있겠지만 비트 한자리가 필드 한자리와 매칭이 되도록 보는 방식이다. 2 진수로 1 ... 31 은 0001, 0010, 0011, 0100, 0101, ... , 1111 이렇게 표현되기 때문이다. 그리고 이렇게 하면 조합을 굳이 별도로 구현할 필요도 없다.
 
 아래는 원코드와 최대한 유사하도록 비트연산을 사용한 방식으로 수정해봤다.
 
-```python
-#1 삭제
+```py
+import numpy as np
 
-#2 삭제
-            
-#3
-def check_unique(it):
-    return len(it) == len(set(it))
-
-#4
-def check_subset(x, keys):
-    for k in keys:
-        # if set(k) <= set(x): return True
-        if k | x == x: return True
-    return False
-    
 def solution(relation):
-    #5
+    # 1. relation 을 numpy.array 형변환한 r, 후보키들을 담을 keys set 자료형
+    r = np.array(relation)
     keys = set()
-    rel = [list(x)[::-1] for x in zip(*relation)]
     
-    #6
-    # for x in gen_all_combis(list(range(len(rel)))):
-    combis = list(range(1, 1 << len(rel)))
-    combis.sort(key=lambda x: bin(x)[2:].count('1'))
-    for x in combis:
-        if not check_subset(x, keys):
-            # tmp = [rel[y] for y in x]
-            tmp = [rel[y] for y in range(len(rel)) if (x >> y) & 1]
-            joined = [''.join(y) for y in zip(*tmp)]
-            if check_unique(joined): keys.add(x)
+    # 2. 삭제
     
+    # 3. 최소성 검사 함수
+    def is_least(combi):
+        for key in keys:
+            # if set(key) <= set(combi):
+            if key | combi == combi:
+                return False
+        return True
+    
+    # 4. 유일성 검사 함수
+    def is_unique(it):
+        return len(it) == len(list(set(it)))
+    
+    # 5. gen_combis 반복, 최소성, 유일성 검사하여 keys 에 삽입
+    # for combi in gen_combis(r.shape[1]):
+    combis = list(range(1, 1 << r.shape[1]))
+    combis.sort(key=lambda x: '{:b}'.format(x).count('1'))
+    for combi in combis:
+        if is_least(combi):
+            # tmp = [r.T[x] for x in combi]
+            tmp = [r.T[x] for x in range(r.shape[1]) if (combi >> x) & 1]
+            tmp = [''.join(strs) for strs in zip(*tmp)]
+            if is_unique(tmp):
+                keys.add(combi)
+            
+    # 6. keys 개수 리턴
     return len(keys)
 ```
 
-`#6` 코드의 `for` 구문이 바뀌었다. 1 부터 `1 << len(rel)` 까지 숫자가 담긴 `combis` 리스트 생성한 뒤, 이를 2 진수로 바꿨을 때 1 이 포함된 개수가 작은 수부터 정렬을 한다. 왜냐하면 최소성 검사를 할 때, 이미 1 이 많이 포함된 (즉 필드가 많이 포함된) 후보키가 있다면 이보다 더 적은 필드가 포함된 키가 왔을 때 교체를 해야하지만 그런 코드는 구현하고 있지 않다.
+`# 6` 코드의 `for` 구문이 바뀌었다. 1 부터 `1 << r.shape[1]` 까지 숫자가 담긴 `combis` 리스트 생성한 뒤, 이를 2 진수로 바꿨을 때 1 이 포함된 개수가 작은 수부터 정렬을 한다.
 
-원코드에서도 필드수가 적은 것부터 검사하여 후보키를 채웠기 때문에 여기서도 필드수가 적은 것 (즉 1 을 적게 가지고 있는 수) 부터 채우기 위함이다.
+왜냐하면 최소성 검사를 할 때, 이미 1 이 많이 포함된 (즉 필드가 많이 포함된) 후보키가 있다면 이보다 더 적은 필드가 포함된 키가 왔을 때 교체를 해야하지만 그런 코드는 구현하고 있지 않다. 원코드에서도 필드수가 적은 것부터 검사하여 후보키를 채웠기 때문에 여기서도 필드수가 적은 것 (즉 1 을 적게 가지고 있는 수) 부터 채우기 위함이다.
 
-그리고 최소성 검사를 수행하는 `#4` 함수 구문도 바뀌었다. 인수 `x` 가 정수, `keys` 가 정수를 담은 set 자료형이기 때문에 OR 비트연산으로 부분집합 여부를 검사한다.
+`# 4` 함수 구문도 바뀌었다. 인수 `combi` 가 정수, `keys` 가 정수를 담은 set 자료형이기 때문에 OR 비트연산으로 부분집합 여부를 검사한다.
 
-최소성 검사를 통과했다면 유일성 검사를 위해 필드를 조합한다. 비트연산으로 `(x >> y) & 1` 구문은 `x` 를 오른쪽으로 `y` 만큼 옮긴 뒤, 1 과 AND 비트연산을 한다. 손으로 끄젹여보면 알겠지만 `x` 를 2 진수로 표현했을 때 `y` 자릿수에 1 이 있는 것만 True 가 된다. 예를들어 `x` 가 2 진수로 1001 이라면 0 번째 자릿수와 3 번째 자릿수만 1 이므로 0 번 인덱스, 3 번 인덱스 필드만 조합하게 된다.
-
-비트연산을 사용하면 속도면에서도 월등히 유리하다. 아래는 원코드와 비트연산을 사용한 수정코드 처리 속도를 비교해 본 그림이다.
-
-![속도비교](https://tedblog.github.io/img/programmers/programmers-0003.png)
-{:.center}
-
-모든 테스트에서 오른쪽의 수정코드가 왼쪽의 원코드보다 속도가 뒤지는 경우는 없었다.
+최소성 검사를 통과했다면 유일성 검사를 위해 필드를 조합한다. 비트연산으로 `(combi >> x) & 1` 구문은 `combi` 를 오른쪽으로 `x` 만큼 옮긴 뒤, 1 과 AND 비트연산을 한다. 손으로 끄젹여보면 알겠지만 `combi` 를 2 진수로 표현했을 때 `x` 자릿수에 1 이 있는 것만 True 가 된다. 예를들어 `combi` 가 2 진수로 1010010 이라면 오른쪽부터 1, 4, 6 번째 자릿수만 1 이므로, 1, 4, 6 인덱스에 해당하는 필드만 조합하게 된다.
