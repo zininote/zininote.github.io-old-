@@ -8,7 +8,7 @@ title: excel
   <h1>{{ page.title }} 카테고리 포스팅들</h1>
 </div>
 <div id="cat-content">
-  {% assign sorted = site.posts | sort: 'title' %}
+  {% assign sorted = site.posts | reverse %}
   {% for post in sorted %}
     {% if post.cat == page.title %}
       <div class="post-list">
