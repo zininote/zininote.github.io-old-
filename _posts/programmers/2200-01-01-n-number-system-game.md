@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-programmers
 title: "LV2: N진수 게임"
 updated: 2020-09-07
 cat: programmers
