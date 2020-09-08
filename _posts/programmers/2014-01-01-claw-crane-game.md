@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-programmers
 title: "LV1: 크레인 인형뽑기 게임"
 updated: 2020-09-07
 cat: programmers
