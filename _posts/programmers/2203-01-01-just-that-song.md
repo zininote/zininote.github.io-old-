@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-programmers
 title: "LV2: 방금그곡"
 updated: 2020-09-08
 cat: programmers
