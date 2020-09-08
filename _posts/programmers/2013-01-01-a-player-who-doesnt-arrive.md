@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-programmers
 title: "LV1: 완주하지 못한 선수"
 updated: 2020-09-07
 cat: programmers
