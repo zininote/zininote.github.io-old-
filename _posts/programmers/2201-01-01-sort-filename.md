@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-programmers
 title: "LV2: 파일명 정렬"
 updated: 2020-09-07
 cat: programmers
