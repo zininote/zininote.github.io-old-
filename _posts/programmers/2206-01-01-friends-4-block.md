@@ -89,8 +89,7 @@ def solution(m, n, board):
         
         # 2-5. 블록 떨어트리기 처리
         for col in b.T:
-            tmp = np.concatenate((col[col == ''], col[col != '']))
-            np.copyto(col, tmp)
+            col[:] = np.concatenate((col[col == ''], col[col != '']))
 ```
 
 [numpy 공식문서](https://numpy.org/doc/stable/index.html)를 통해서 원하는 기능을 최대한 찾아가며 구현해봤다. 생각보다 코드구현이 상당히 수월했다. 고정된 이차원배열 자료형을 써야하는 경우 자주 이용해야겠다.
