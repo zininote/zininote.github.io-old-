@@ -1,7 +1,7 @@
 ---
 layout: post-programmers
 title: "LV1: 크레인 인형뽑기 게임"
-updated: 2020-09-07
+updated: 2020-09-10
 cat: programmers
 ---
 
@@ -46,3 +46,36 @@ def solution(board, moves):
 `# 3` 코드의 바구니 처리는, 반복순회하는 m 라인에 인형이 있다면 `pop` 메서드로 뽑아내고, 바구니 마지막에 이미 같은 인형이 있는지 보고, 있다면 바구니의 인형도 `pop` 메서드로 제거하고, 두개의 인형이 제거되므로 `c` 변수를 2 증가시킨다. 아니라면 바구니에 인형을 추가한다.
 
 사전에 `board` 리스트를 조작하기 쉽도록 변형했기 때문에, 크레인 동작을 나타내는 `# 3` 코드가 생각보다 간단하게 구현된 것 같다.
+
+## 참고
+
+문득 `numpy` 모듈을 이용하면 어떨까 싶어서 원코드 흐름과 비슷하게하면서 자료형만 `numpy.array` 를 사용해봤다.
+
+```py
+import numpy as np
+
+def solution(board, moves):
+    # 1. board 를 numpy.array 자료형으로 변환, b 할당
+    b = np.array(board)
+    
+    # 2. 바구니 a, 인형 삭제 수 c 초기화
+    a, c = [], 0
+    
+    # 3. moves 반복, 인형있다면 바구니에 추가, 같은 인형이라면 제거 시행
+    for m in moves:
+        col = b[:, m-1]
+        if np.any(col != 0):
+            idx = np.argmax(col > 0)
+            tmp = col[idx]
+            col[idx] = 0
+            if a and a[-1] == tmp:
+                a.pop()
+                c += 2
+            else:
+                a.append(tmp)
+
+    # 4. c 리턴
+    return c
+```
+
+`numpy` 를 사용하면 굳이 처음부터 행/렬 전환을 할 필요가 없다. 열방향 탐색이 편리하기 때문이다. 다만 `numpy.array` 자료형은 순수한 array 형태의 자료형이라 `pop` 등의 공간크기 자체에 영향을 주는 함수를 사용할 수 없다. 따라서 `argmax` 함수로 인형이 있는 위치를 찾아서, 그 위치에 있는 인형값을 `tmp` 에 담고, 그 위치는 0 으로 채워버리는 형태로 구현하였다.
