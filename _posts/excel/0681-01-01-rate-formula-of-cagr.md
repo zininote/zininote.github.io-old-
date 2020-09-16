@@ -1,6 +1,6 @@
 ---
 layout: post-excel
-title: "RATE: 엑셀에서 CAGR (연평균 성장률) 구하는 함수식
+title: "RATE: 엑셀에서 CAGR (연평균 성장률) 구하는 함수식"
 updated: 2020-09-17
 cat: excel
 ---
