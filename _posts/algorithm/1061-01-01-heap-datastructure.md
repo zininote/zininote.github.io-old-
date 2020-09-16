@@ -11,7 +11,7 @@ cat: algorithm
 
 힙 정렬, 우선순위 큐 등 구현에 사용되는 자료구조로, 아래와 같은 이진 트리 형태를 띄고 있다.
 
-![그림00](https://tedblog.github.io/img/algorithm/algorithm-1061-01-01-00.svg)
+![그림00](https://zininote.github.io/img/algorithm/algorithm-1061-01-01-00.svg)
 {:.center}
 
 부모 노드 아래에 최대 두개의 자식 노드가 달려있다. 위쪽과 같이 노드의 값이 부모 < 자식 이라면 "최소 힙(Min Heap), 아래쪽과 같이 부모 > 자식 이라면 "최대 힙(Max Heap)이라 한다. 가장 위에 위치한 Root 노드는, 최소 힙이라면 트리에서 가장 작은 값을, 최대 힙이라면 가장 큰 값을 가지게 된다.
@@ -22,7 +22,7 @@ cat: algorithm
 
 힙의 각 노드를 아래 그림처럼 순서대로 인덱스화 했을 때, 어떤 노드 `v` 의 부모, 자식의 인덱스 관계는 아래와 같다.
 
-![그림01](https://tedblog.github.io/img/algorithm/algorithm-1061-01-01-01.svg)
+![그림01](https://zininote.github.io/img/algorithm/algorithm-1061-01-01-01.svg)
 {:.center}
 
 - v 노드의 부모 인덱스는 (v-1)//2
@@ -41,7 +41,7 @@ cat: algorithm
 
 그림으로 표현하면 아래와 같다.
 
-![그림00](https://tedblog.github.io/img/algorithm/algorithm-1061-01-01-02.svg)
+![그림02](https://zininote.github.io/img/algorithm/algorithm-1061-01-01-02.svg)
 {:.center}
 
 이번에는 우선순위 큐에서 삭제한다고 해보자. 힙 자료구조에서 Root 노드의 값을 가져오면서 삭제를 하게 되는데, 아래처럼 작동한다. (최소 힙을 가정한다.)
@@ -52,7 +52,7 @@ cat: algorithm
 
 그림으로 표현하면 아래와 같다.
 
-![그림00](https://tedblog.github.io/img/algorithm/algorithm-1061-01-01-03.svg)
+![그림03](https://zininote.github.io/img/algorithm/algorithm-1061-01-01-03.svg)
 {:.center}
 
 ## python 코드로 구현
