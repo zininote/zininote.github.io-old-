@@ -54,24 +54,22 @@ def solution(nodeinfo):
     # 4
     a = []
     def preorder(node):
-        a.append(node.data['i'])
-        if node.left:
+        if node:
+            a.append(node.data['i'])
             preorder(node.left)
-        if node.right:
             preorder(node.right)
     preorder(g)
     
-    # 5
+    # 4
     b = []
     def postorder(node):
-        if node.left:
+        if node:
             postorder(node.left)
-        if node.right:
             postorder(node.right)
-        b.append(node.data['i'])
+            b.append(node.data['i'])
     postorder(g)
     
-    # 6
+    # 5
     return [a, b]
 ```
 
