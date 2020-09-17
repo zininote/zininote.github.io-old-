@@ -60,7 +60,7 @@ def solution(nodeinfo):
             preorder(node.right)
     preorder(g)
     
-    # 4
+    # 5
     b = []
     def postorder(node):
         if node:
@@ -69,7 +69,7 @@ def solution(nodeinfo):
             b.append(node.data['i'])
     postorder(g)
     
-    # 5
+    # 6
     return [a, b]
 ```
 
