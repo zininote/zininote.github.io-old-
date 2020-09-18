@@ -52,24 +52,16 @@ def solution(nodeinfo):
     fn(g, info)
     
     # 4
-    a = []
-    def preorder(node):
+    a, b = [], []
+    def traverse(node):
         if node:
             a.append(node.data['i'])
-            preorder(node.left)
-            preorder(node.right)
-    preorder(g)
-    
-    # 5
-    b = []
-    def postorder(node):
-        if node:
-            postorder(node.left)
-            postorder(node.right)
+            traverse(node.left)
+            traverse(node.right)
             b.append(node.data['i'])
-    postorder(g)
-    
-    # 6
+    traverse(g)
+        
+    # 5
     return [a, b]
 ```
 
@@ -85,6 +77,6 @@ def solution(nodeinfo):
 
 `# 3-2` 는 좌/우 분리된 리스트가 있다면 그 중 제일 앞요소를 left 혹은 right 에 새로운 노드를 생성한다. 이 역시 제일 앞 요소가 Y좌표가 가장 큰 수가 되므로, 제일 앞 요소를 pop 하여 생성한다.
 
-`# 4`, `# 5` 코드는 각각 위 다른 포스팅 링크의 `preorder`, `postorder` 함수를 이 문제에 맞도록 변형한 것들이다.
+`# 4` 의 `traverse` 함수는, 위에 소개한 다른 포스팅 링크의 `preorder`, `postorder` 함수를 이 문제에 맞도록 변형한 것이다.
 
-`# 6` 에서는 각 방식대로 `g` 를 탐색한 값들을 문제에서 요구하는 형식대로 최종리턴한다.
+`# 5` 에서는 문제에서 요구하는 형식대로 최종리턴한다.
