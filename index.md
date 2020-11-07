@@ -25,6 +25,6 @@ updated: 2020-11-07
 ```js
 // let's enjoy blogging!!
 function say_hello() {
-	console.log('Hello Blog!!');
+    console.log('Hello Blog!!');
 }
 ```
