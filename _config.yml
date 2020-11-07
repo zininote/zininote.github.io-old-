@@ -1,5 +1,6 @@
-title: 찌니노트
+title: "찌니노트"
+description: "프로그래밍, 그리고 이것저것"
+permalink: post/:title
 url: https://zininote.github.io
-description: 찌니의 관심사항 모음노트
-permalink: /posts/:title
 markdown: kramdown
+tag_orger: [algorithm]

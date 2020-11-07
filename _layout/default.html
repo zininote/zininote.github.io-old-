@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:image" content="/img/zininote_800x800.png">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="og:description" content="{{ site.description }}">
+    <title>{{ site.title }}</title>
+  	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+  </head>
+  <body>
+    <div id="header">
+      <div>
+        <div id="header-title">{{ site.title }}</div>
+        <ul id="nav">
+          <li><a href="/">home</a></li>
+          {% for tag in site.tag_order %}
+            <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div id="main">
+      <div>
+      
+        {{ content }}
+        
+      </div>
+    </div>
+    <div id="footer">
+      <div>
+        <div id="footer-msg">
+          <div class="msg">This blog is powered by Github,</div><div class="msg">and designed by zininote.</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -33,7 +33,7 @@ img {vertical-align: bottom;}
 #content blockquote p {margin: 0;}
 #content .cap {margin-top: -24px; font-size: 14px; background-color: inherit; text-align: center; color: #999999;}
 
-#content img {text-align: center; max-width: 100%;}
+#content img {text-align: center; max-width: 100%; display: block; margin: 0 auto;}
 #content .center {text-align: center;}
 
 #content pre,
@@ -64,6 +64,8 @@ img {vertical-align: bottom;}
 #tag-content h2 {font-size: 16px; display: inline-block;}
 #cat-content h2:before,
 #tag-content h2:before {content: ">"; display: inline-block; width: 16px; margin-left: -16px;}
+#cat-content .sub-category,
+#tag-content .sub-tag {margin: 64px 0 16px 16px}
 #cat-content .post-desc,
 #tag-content .post-desc {color: #999999; font-size: 14px; display: inline-block;}
 
