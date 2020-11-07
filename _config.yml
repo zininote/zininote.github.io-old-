@@ -4,5 +4,3 @@ permalink: post/:title
 url: https://zininote.github.io
 markdown: kramdown
 tag_orger: [algorithm]
-
-theme: jekyll-theme-minimal
