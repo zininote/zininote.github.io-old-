@@ -45,9 +45,7 @@ for(var x of zip(a, b, c)) {
 
 그리고 for 구문으로 `i` 를 순회하면서, 인수로 전달된 배열들의 `i` 번째 인덱스 요소들을 `map` 함수로 묶어 yield 하는 구조다.
 
-만일 `length` 계산할 때 사용한 `min` 함수 대신 `max` 함수를 사용하면, 가장 길이가 긴 배열의 길이까지 순회하는데, Python 의 `itertools.zip_longest` 함수처럼 동작한다.
-
-이때는, Javascript 특성 상 인덱스를 넘어서는 범위를 참조하게 되면 undefined 값을 가지므로, 아래처럼 결과가 나타난다.
+만일 `length` 계산할 때 사용한 `min` 함수 대신 `max` 함수를 사용하면, 가장 길이가 긴 배열의 길이까지 순회하는데, Javascript 특성 상 인덱스를 넘어서는 범위를 참조하게 되면 undefined 값을 가지므로, 아래처럼 결과가 나타난다.
 
 ```js
 // zip 함수 안에 min 대신 max 함수를 사용했을 경우
@@ -59,4 +57,4 @@ for(var x of zip(a, b, c)) {
 // [ 4, undefined, undefined ]
 ```
 
-undefined 를 적절히 처리하는 구문만 추가하면, Python 의 `itertools.zip_longest` 도 흉내가 가능할 것이다.
+이는 마치 Python 의 `itertools.zip_longest` 함수와 비슷하다. 만일 undefined 를 적절히 처리하는 구문만 추가하면, 이 함수의 흉내도 만들어 낼 수 있을 것이다.
