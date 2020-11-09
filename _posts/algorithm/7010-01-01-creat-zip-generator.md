@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "javascript 에서 Python 의 zip 함수 구현"
+title: "Javascript 에서 Python 의 zip 함수 구현"
 updated: 2020-11-09
 tags: [algorithm,function]
 ---
