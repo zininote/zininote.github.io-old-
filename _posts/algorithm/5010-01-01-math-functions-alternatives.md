@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Javascript 수학 함수를 대체하는 연산자조합들"
-update: 2020-11-10
+updated: 2020-11-10
 tags: [algorithm,math]
 ---
 
