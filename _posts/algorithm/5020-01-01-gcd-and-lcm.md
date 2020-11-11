@@ -71,7 +71,7 @@ print(gcd(16, 24))    # 8
 
 // lcm 함수
 function lcm(x, y) {
-    return x*y / gcd(x, y) | 0;
+    return x*y / gcd(x, y);
 }
 
 // 사용 예시
@@ -89,11 +89,7 @@ def lcm(x, y):
 print(lcm(16, 24))    # 48
 ```
 
-lcm 은 정수이므로, 계산된 리턴값이 정수가 되도록 수식을 보정했다.
-
-Javascript 에서는 수식 뒷부분에 `| 0` 을 추가했다. 이는 | 의 앞부분과 뒷부분을 OR 비트연산하라는 의미이며, 이 결과 소수점 이하는 사라지고 정수만 남게 된다. 수학 함수를 대체하는 비트연산에 대해서는 [별도 포스팅](https://zininote.github.io/post/math-functions-alternatives)을 참고하기 바란다.
-
-Python 에서는 나눗셈 몫만을 구해주는 `//` 연산자가 있으므로 이를 사용하였다.
+Python 에서는 나눗셈 몫만을 구해주는 `//` 연산자가 따로 있으므로 이를 사용하였다.
 
 ## 3개수 이상의 gcd, lcm 구하는 법
 
