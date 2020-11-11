@@ -2,5 +2,9 @@ title: "찌니노트"
 description: "프로그래밍, 그리고 이것저것"
 permalink: post/:title
 url: https://zininote.github.io
-markdown: kramdown
 tag_order: [algorithm]
+
+markdown: kramdown
+kramdown:
+    syntax_highlighter_opt:
+        disable: true
