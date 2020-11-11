@@ -4,8 +4,7 @@ permalink: post/:title
 url: https://zininote.github.io
 tag_order: [algorithm]
 
-highlighter: none
 markdown: kramdown
 kramdown:
-    syntax_highlighter_opt:
+    syntax_highlighter_opts:
         disable: true
