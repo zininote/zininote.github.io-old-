@@ -59,7 +59,7 @@ Repository(레포지토리) 혹은 줄여서 Repo(레포)라고 하는 단어는
 
 위 처럼 입력하여 Repo 를 생성하면, 깃허브는 이 Repo 를 https://username.github.io 로 접근할 수 있도록 생성해준다. 만일 다른 이름(예를들어, handsome-guy)을 입력한여 Repo 를 생성한다면, https://username.github.io/handome-guy 로 접근하도록 생성해준다.
 
-참고로 아랫쪽에는 이 Repo 를 공개(Public) 아니면 비공개(Private) 으로 할 건지를 묻는데, 디폴드 값인 공개로 두자. [깃허브 공식문서](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/creating-a-github-pages-site)를 보면, 무료로는 공개 깃허브 페이지만 만들 수 없다고 되어 있다.
+참고로 아랫쪽에는 이 Repo 를 공개(Public) 아니면 비공개(Private) 으로 할 건지를 묻는데, 디폴드 값인 공개로 두자. [깃허브 공식문서](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/creating-a-github-pages-site)를 보면, 무료로는 공개로만 깃허브 페이지를 만들 수 있다고 되어 있다.
 
 Repo 이름을 기입했으면, 다른 옵션들은 건들지 말고, 제일 아래 "Create repository" 버튼을 클릭한다. 뭔가 복잡하고 잡다한 코드들이 가득한 화면이 나올 것이다.
 
