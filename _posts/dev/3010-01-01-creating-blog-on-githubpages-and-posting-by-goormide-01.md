@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "구름 IDE 로, 깃허브 페이지 블로그 만들기 (1)"
+title: "깃허브 페이지 블로그 만들고, 구름 IDE 로 포스팅하기 (1)"
 updated: 2020-11-12
 tags: [dev,blog]
 ---
