@@ -33,6 +33,7 @@ function gcd(x, y) {
 // 사용 예시
 console.log(gcd(16, 24));    // 8
 ```
+{:lang='javascript'}
 
 ```python
 # 재귀호출 방식 gcd 함수
@@ -47,6 +48,7 @@ def gcd_iterative(x, y):
 # 사용 예시
 print(gcd(16, 24))    # 8
 ```
+{:lang='python'}
 
 재귀호출을 사용한 방식과 단순 반복문을 사용한 방식 두가지로 나타낼 수 있다.
 
@@ -71,6 +73,7 @@ function lcm(x, y) {
 // 사용 예시
 console.log(lcm(16, 24));    // 48
 ```
+{:lang='javascript'}
 
 ```python
 # lcm 함수
@@ -80,6 +83,7 @@ def lcm(x, y):
 # 사용 예시
 print(lcm(16, 24))    # 48
 ```
+{:lang='python'}
 
 Python 에서는 나눗셈 몫만을 구해주는 `//` 연산자가 따로 있으므로 이를 사용하였다.
 
@@ -100,6 +104,7 @@ for(var y of nums.slice(1,)) {
 }
 console.log(x);    // 6
 ```
+{:lang='python'}
 
 `x` 에 `nums` 배열의 첫 요소를 할당한 뒤, 2번째 요소부터 반복하면서 계속 gcd 를 계산하는 방식이다.
 
@@ -120,5 +125,6 @@ print(np.lcm(60, 18))    # 180
 print(np.gcd.reduce([12, 60, 42, 18]))    # 6
 print(np.lcm.reduce([12, 60, 42, 18]))    # 1200
 ```
+{:lang='python'}
 
 numpy 모듈의 더 자세한 gcd, lcm 함수에 대해서는 [NumPy 공식문서](https://numpy.org/doc/stable/reference/generated/numpy.gcd.html)를 참고하자.
