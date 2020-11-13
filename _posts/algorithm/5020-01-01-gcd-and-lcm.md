@@ -33,7 +33,7 @@ function gcd(x, y) {
 // 사용 예시
 console.log(gcd(16, 24));    // 8
 ```
-{:lang='javascript'}
+{:.javascript}
 
 ```python
 # 재귀호출 방식 gcd 함수
@@ -48,7 +48,7 @@ def gcd_iterative(x, y):
 # 사용 예시
 print(gcd(16, 24))    # 8
 ```
-{:lang='python'}
+{:.python}
 
 재귀호출을 사용한 방식과 단순 반복문을 사용한 방식 두가지로 나타낼 수 있다.
 
