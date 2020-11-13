@@ -49,6 +49,11 @@
       </div>
     </div>
     <script src="/js/hljs.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+      hljs.configure({
+        classPrefix: 'language?',
+      });
+      hljs.initHighlightingOnLoad();
+    </script>
   </body>
 </html>

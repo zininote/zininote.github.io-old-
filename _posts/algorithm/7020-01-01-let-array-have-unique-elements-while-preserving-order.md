@@ -11,9 +11,7 @@ tags: [algorithm,function]
 
 이 때는 보통 Set(집합) 자료형으로 변환하였다가, 다시 배열(혹은 리스트)로 변환해주는 방식을 많이 사용한다. 집합의 특성상 중복요소를 허용하지 않기 때문이다.
 
-```js
-// Javascript
-
+```javascript
 // 고유 요소만 남기는 함수
 function unique(arr) {
     return [...new Set(arr)];
@@ -24,9 +22,7 @@ var arr = [4, 3, 3, 5, 1, 9, 1, 5, 1, 6];
 console.log(unique(arr));    // [4, 3, 5, 1, 9, 6]
 ```
 
-```py
-# Python
-
+```python
 # 고유 요소만 남기는 함수
 def unique(arr):
     return [*set(arr)]
@@ -48,9 +44,7 @@ print(unique(arr))    # [1, 3, 4, 5, 6, 9]
 
 아래와 같은 코드를 사용하면, 기존 순서를 유지하면서도 고유한 요소만 추려낼 수 있다.
 
-```js
-// Javascript
-
+```javascript
 // 기존 순서 유지하면서 고유 요소만 남기는 함수
 function unique(arr) {
     return arr.filter((e, i) => i === arr.indexOf(e));
@@ -61,9 +55,7 @@ var arr = [4, 3, 3, 5, 1, 9, 1, 5, 1, 6];
 console.log(unique(arr));    // [4, 3, 5, 1, 9, 6]
 ```
 
-```py
-# Python
-
+```python
 # 기존 순서 유지하면서 고유 요소만 남기는 함수
 def unique(arr):
     return [e for i, e in enumerate(arr) if i == arr.index(e)]
