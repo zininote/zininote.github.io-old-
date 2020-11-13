@@ -40,7 +40,7 @@ for(var x of zip(a, b, c)) {
 // [ 1, "b", "나" ]
 // [ 2, "c", "다" ]
 ```
-{:lang='javascript'}
+{:.javascript}
 
 여러 배열들을 인수로 전달하면, 가장 길이가 작은 배열의 길이를 `length` 에 할당한다. Python 의 `zip` 함수 처럼, 가장 길이가 작은 배열의 길이까지만 yield 하기 위함이다.
 
@@ -57,6 +57,6 @@ for(var x of zip(a, b, c)) {
 // [ 3, undefined, "라" ]
 // [ 4, undefined, undefined ]
 ```
-{:lang='javascript'}
+{:.javascript}
 
 이는 마치 Python 의 `itertools.zip_longest` 함수와 비슷하다. 만일 undefined 를 적절히 처리하는 구문만 추가하면, 이 함수의 흉내도 만들어 낼 수 있을 것이다.

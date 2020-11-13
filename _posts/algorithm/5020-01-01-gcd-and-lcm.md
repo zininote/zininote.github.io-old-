@@ -73,7 +73,7 @@ function lcm(x, y) {
 // 사용 예시
 console.log(lcm(16, 24));    // 48
 ```
-{:lang='javascript'}
+{:.javascript}
 
 ```python
 # lcm 함수
@@ -83,7 +83,7 @@ def lcm(x, y):
 # 사용 예시
 print(lcm(16, 24))    # 48
 ```
-{:lang='python'}
+{:.python}
 
 Python 에서는 나눗셈 몫만을 구해주는 `//` 연산자가 따로 있으므로 이를 사용하였다.
 
@@ -104,7 +104,7 @@ for(var y of nums.slice(1,)) {
 }
 console.log(x);    // 6
 ```
-{:lang='python'}
+{:.python}
 
 `x` 에 `nums` 배열의 첫 요소를 할당한 뒤, 2번째 요소부터 반복하면서 계속 gcd 를 계산하는 방식이다.
 
@@ -125,6 +125,6 @@ print(np.lcm(60, 18))    # 180
 print(np.gcd.reduce([12, 60, 42, 18]))    # 6
 print(np.lcm.reduce([12, 60, 42, 18]))    # 1200
 ```
-{:lang='python'}
+{:.python}
 
 numpy 모듈의 더 자세한 gcd, lcm 함수에 대해서는 [NumPy 공식문서](https://numpy.org/doc/stable/reference/generated/numpy.gcd.html)를 참고하자.

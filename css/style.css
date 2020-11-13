@@ -55,11 +55,11 @@ img {vertical-align: bottom;}
     background-color: #666666;
 }
 
-#content pre[lang='javascript']:after {
+#content pre.javascript:after {
     background-color: #0000ff;
 }
 
-#content pre[lang='python']:after {
+#content pre.python:after {
     background-color: #a52a2a;
 }
 

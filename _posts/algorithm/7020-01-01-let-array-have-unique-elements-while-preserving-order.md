@@ -21,7 +21,7 @@ function unique(arr) {
 var arr = [4, 3, 3, 5, 1, 9, 1, 5, 1, 6];
 console.log(unique(arr));    // [4, 3, 5, 1, 9, 6]
 ```
-{:lang='javascript'}
+{:.javascript}
 
 ```python
 # 고유 요소만 남기는 함수
@@ -32,7 +32,7 @@ def unique(arr):
 arr = [4, 3, 3, 5, 1, 9, 1, 5, 1, 6]
 print(unique(arr))    # [1, 3, 4, 5, 6, 9]
 ```
-{:lang='python'}
+{:.python}
 
 결과를 보면 확실히 중복없이 고유한 요소들만 추려졌다. 하지만 중대한 차이가 있는데, Javascript 의 결과는 기존 배열에 입력되어있는 순서를 유지하지만, Python 의 결과는 그렇지가 않다.
 
@@ -56,7 +56,7 @@ function unique(arr) {
 var arr = [4, 3, 3, 5, 1, 9, 1, 5, 1, 6];
 console.log(unique(arr));    // [4, 3, 5, 1, 9, 6]
 ```
-{:lang='javascript'}
+{:.javascript}
 
 ```python
 # 기존 순서 유지하면서 고유 요소만 남기는 함수
@@ -67,7 +67,7 @@ def unique(arr):
 arr = [4, 3, 3, 5, 1, 9, 1, 5, 1, 6]
 print(unique(arr))    # [4, 3, 5, 1, 9, 6]
 ```
-{:lang='python'}
+{:.python}
 
 Javascript 에서는 filter 함수를, Python 에서는 리스트 comprehension 방식을 사용하였으나, 고유 요소 추출하는 로직은 동일하다.
 
