@@ -28,4 +28,4 @@ function say_hello() {
     console.log('Hello Blog!!');
 }
 ```
-{:lang='javascript'}
+{:.javascript}
