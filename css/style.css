@@ -44,7 +44,7 @@ img {vertical-align: bottom;}
 
 #content pre {position: relative;}
 #content pre:after {
-    content: attr(lang);
+    content: attr(class);
     position: absolute;
     top: 0;
     left: 0;
