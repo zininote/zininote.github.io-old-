@@ -7,7 +7,7 @@ tags: [programmers,lv1]
 
 ## 문제
 
-[프로그래머스, 다트 게임](https://programmers.co.kr/learn/courses/30/lessons/12948)
+[프로그래머스, 핸드폰 번호 가리기](https://programmers.co.kr/learn/courses/30/lessons/12948)
 
 그렇게 어려운 문제는 아니다. 가장 간단히 생각할 수 있는 방법은, 주어지는 phone_number 에서 뒷 4자리만 잘라낸 다음, 자릿수에 맞춰 * 기호를 채운 문자열과 다시 합치면 된다.
 
