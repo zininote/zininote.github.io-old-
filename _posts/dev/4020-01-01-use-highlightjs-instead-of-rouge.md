@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "깃허브 페이지 하이라이터, rouge 대신 highlight.js 사용"
+title: "깃허브 페이지 하이라이터, Rouge 대신 Highlight.js 사용"
 updated: 2020-11-14
 tags: [dev,blog]
 ---
@@ -9,7 +9,7 @@ tags: [dev,blog]
 
 [깃허브 페이지](https://pages.github.com/)에서 기본으로 가장 많이 사용되는, 정적 웹페이지 제너레이터인 [Jekyll](https://pages.github.com/) 의 기본 코드 하이라이터는 [Rouge](http://rouge.jneen.net/) 이다.
 
-하지만 아쉬운 점이 있엇는데, Rouge 는 MS오피스의 Excel 문법을 지원하지 않는다. Wordpress 로 만든 블로그에 있는 Excel 관련 자료를 옮겨야하는데 다소 아쉬웠다. 그래서 Excel 하이라이팅을 지원하는 [Highlight.js](https://highlightjs.org/) 로 바꾸기로 마음 먹었다.
+하지만 아쉬운 점이 있엇는데, Rouge 는 MS 오피스의 Excel 문법을 지원하지 않는다. 본인의 Wordpress 블로그에 있는 Excel 관련 자료를 옮겨야하는데 다소 아쉬웠다. 그래서 Excel 하이라이팅을 지원하는 [Highlight.js](https://highlightjs.org/) 로 바꾸기로 마음 먹었다.
 
 ## Rouge 작동 끄기
 
@@ -40,7 +40,7 @@ kramdown:
 ```
 {:.html}
 
-하지만 CDN 등에서 js 파일을 가져오면, 기본적으로 많이 쓰는 언어만 지원할 뿐, Excel 은 지원하지 않는다. 그래서 직접 js 파일을 다운받아서 사용하기로 했다.
+하지만 위처럼 CDN 등에서 js 파일을 가져오면, 기본적으로 많이 쓰는 언어만 지원할 뿐, Excel 은 지원하지 않는다. 그래서 직접 js 파일을 다운받아서 사용하기로 했다.
 
 Highlight.js 의 [다운로드 페이지](https://highlightjs.org/download/)에 가면 하이라이팅을 원하는 언어를 선택하여 다운로드가 가능하다. 중간에 보면 본인이 원하는 Excel fomulae 도 있다.
 
