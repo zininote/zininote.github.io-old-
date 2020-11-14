@@ -29,13 +29,13 @@ kramdown:
 
 ```html
 <head>
-  <!-- 생략 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/github.min.css"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"</script>
+    <!-- 생략 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/github.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"</script>
 </head>
 <body>
-  <!-- 생략 -->
-  <script>hljs.initHighlightingOnLoad();</script>
+    <!-- 생략 -->
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 ```
 {:.html}

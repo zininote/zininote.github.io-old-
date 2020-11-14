@@ -49,7 +49,9 @@ img {vertical-align: bottom;}
     display: inline-block; width: 80px; text-align: center;
 }
 
-#content pre.javascript:after {
+#content pre.javascript:after,
+#content pre.html:after,
+#content pre.css:after {
     background-color: #00008b;
 }
 
