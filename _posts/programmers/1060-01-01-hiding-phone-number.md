@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "다트 게임"
+title: "핸드폰 번호 가리기"
 updated: 2020-11-14
 tags: [programmers,lv1]
 ---
