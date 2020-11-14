@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "깃허브 페이지, rouge 하이라이터 대신 highlight.js 사용"
+title: "깃허브 페이지 하이라이터, rouge 대신 highlight.js 사용"
 updated: 2020-11-14
 tags: [dev,blog]
 ---
