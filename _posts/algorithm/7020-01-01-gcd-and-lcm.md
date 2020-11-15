@@ -2,7 +2,7 @@
 layout: post
 title: "최대공약수(gcd)와 최소공배수(lcm) 구하는 함수"
 updated: 2020-11-10
-tags: [algorithm,math]
+tags: [algorithm,function]
 ---
 
 ## gcd 와 lcm
