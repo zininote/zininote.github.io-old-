@@ -25,7 +25,7 @@ kramdown:
 
 ## highlight.js 삽입
 
-아래와 같이 사용하는 것이 가장 간단한 것 같다. jekyll 이 렌더링하는 가장 기본 뼈대(?)인 default.html 의 <head> 태그와 <body> 태그에 아래와 같이 코드를 켜 넣는다.
+아래와 같이 사용하는 것이 가장 간단한 것 같다. jekyll 이 렌더링하는 가장 기본 뼈대(?)인 default.html 의 <head> 태그와 <body> 태그에 아래와 같이 코드를 껴 넣는다.
 
 ```html
 <head>
@@ -42,7 +42,7 @@ kramdown:
 
 하지만 위처럼 CDN 등에서 js 파일을 가져오면, 기본적으로 많이 쓰는 언어만 지원할 뿐, Excel 은 지원하지 않는다. 그래서 직접 js 파일을 다운받아서 사용하기로 했다.
 
-Highlight.js 의 [다운로드 페이지](https://highlightjs.org/download/)에 가면 하이라이팅을 원하는 언어를 선택하여 다운로드가 가능하다. 중간에 보면 본인이 원하는 Excel fomulae 도 있다.
+Highlight.js 의 [다운로드 페이지](https://highlightjs.org/download/)에 가면 하이라이팅을 원하는 언어를 선택하여 다운로드가 가능하다. 중간에 보면 본인이 원하는 Excel formulae 도 있다.
 
 zip 파일로 다운이 되는데, 여기에 보면 highlight.pack.js 파일이 있다. 이를 깃허브 페이지에 올리고, default.html 파일에 붙이면 된다. (나머지 코드는 위와 똑같이 두면 된다.)
 
