@@ -22,10 +22,9 @@ updated: 2020-11-07
 
 2020년 7월에 깃허브 페이지 베타테스트를 어느정도 해봤다. 이제 다른 블로그에 포스팅했던 글부터 옮겨오는 것부터 시작해보려 한다.
 
-```js
-// let's enjoy blogging!!
-function say_hello() {
-    console.log('Hello Blog!!');
-}
+```py
+# let's enjoy blogging!!
+def say_hello():
+    print('Hello Blog!!')
 ```
-{:.javascript}
+{:.python}
