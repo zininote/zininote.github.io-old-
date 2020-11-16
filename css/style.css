@@ -59,6 +59,7 @@ img {vertical-align: bottom;}
     background-color: #a52a2a;
 }
 
+#content pre.vba:after,
 #content pre.excel:after {
     background-color: #006400;
 }
