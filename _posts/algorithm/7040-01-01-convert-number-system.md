@@ -52,6 +52,7 @@ print(from_base('8N', 29))         # 255
 print(from_base('7V', 32))         # 255
 print(from_base('73', 36))         # 255
 ```
+{:.python}
 
 문자열로 표현된 `r` 진법의 숫자 `n` 을 받아서, comprehension 표현식으로 계산을 수행, sum 함수로 합치는 방식이다.
 
