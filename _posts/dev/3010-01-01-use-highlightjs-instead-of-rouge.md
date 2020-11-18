@@ -39,6 +39,7 @@ kramdown:
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/excel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/vbnet.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/yaml.min.js"></script>
     <script>
         hljs.initHighlightingOnLoad();
     </script>
@@ -48,9 +49,9 @@ kramdown:
 
 사실 가장 최신 버전은 10 이다. 하지만 이 **10 버전부터는 공식적으로 IE11 을 지원하지 않는다.** 아직 우리나라는 IE 비중이 좀 있기에 9.9 버전을 사용하였다.
 
-<head> 태그 안에는 하이라이팅 디자인 css 파일을 삽입한다. [Highlight.js 데모](https://highlightjs.org/static/demo/) 사이트에 가면, 각종 디자인 샘플을 확인할 수 있다.
+&lt;head&gt; 태그 안에는 하이라이팅 디자인 css 파일을 삽입한다. [Highlight.js 데모](https://highlightjs.org/static/demo/) 사이트에 가면, 각종 디자인 샘플을 확인할 수 있다.
 
-<body> 태그 제일 아래쪽에 js 파일들을 삽입한다. highlight.min.js 만 삽입해도 웬만한 언어는 지원하지만, Excel 과 VBA 는 지원하지 않는다. 따라서 별도의 랭귀지팩을 삽입했다. highlight.min.js 아래에 삽입되어있는 두 js 파일이 그것이다.
+&lt;body&gt; 태그 제일 아래쪽에 js 파일들을 삽입한다. highlight.min.js 만 삽입해도 웬만한 언어는 지원하지만, Excel, VBA, YAML 은 지원하지 않는다. 따라서 별도의 랭귀지팩을 삽입했다. highlight.min.js 아래에 삽입되어있는 세 js 파일이 그것이다.
 
 ## 사용법
 
