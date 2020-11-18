@@ -25,6 +25,7 @@ def solution(s, n):
         return chr((ord(m[0])-o+n)%26 + o)
     return re.sub(r'[a-zA-Z]', conv, s)
 ```
+{:.python}
 
 re.sub 함수를 사용하였다. 정규식에 매치되는 문자열을 찾아서 다른 문자열로 바꿔주는데, 함수를 인수로 넣을 수 있다.
 
