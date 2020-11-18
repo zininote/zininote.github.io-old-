@@ -27,6 +27,7 @@ def solution(n):
     # 소수 개수 리턴
     return len(prime)
 ```
+{:.python}
 
 `prime` 과 `sieve` set 자료형을 먼저 준비한 뒤, `prime` 에는 소수를, `sieve` 에는 소수가 아닌 수를 넣는다.
 
