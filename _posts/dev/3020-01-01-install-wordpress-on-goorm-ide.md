@@ -54,14 +54,14 @@ tags: [dev,blog]
 
 ![그림02](https://zininote.github.io/img/dev/dev-3020-01-01-02.png)
 
-현재는 7.3.24 버전이다. x.x 까지만 아래처럼 입력하자.
+7.3.24 버전으로 표시되어 있다. x.x 까지만 아래처럼 입력하자.
 
 - apt install php7.3-mysql
 
 중간에 계속 진행하겠느냐는 물음이 나오는데 그냥 엔터를 누르면 된다. 이제 워드프레스를 설치할 차례다. 아래 명령어를 계속 수행한다.
 
 - wget https://ko.wordpress.org/latest-ko_KR.tar.gz
-- tar -zxvf latest-ko_KR.tar.gz --strip-components=1
+- tar -zxvf latest-ko_KR.tar.gz &#45;&#45;strip-components=1
 
 ## 구름 IDE 환경설정
 
