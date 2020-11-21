@@ -72,5 +72,6 @@ def solution(board, moves):
     # count 리턴
     return count
 ```
+{:.python}
 
 `board` 리스트에 적용한 comprehension 표현식이 위에서 언급한 변형 방식이다. zip 함수로 행과 열을 바꾼 뒤, 뒤집은 채로 0 이 아닌 경우만 담도록 하고 있다.
