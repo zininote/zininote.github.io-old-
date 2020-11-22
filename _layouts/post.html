@@ -5,10 +5,12 @@ layout: default
 <div id="page-title">
   <h1>{{ page.title }}</h1>
   <div>
-    Last updated: {{ page.updated }}{% if page.tags.size > 0 %},
-    {% assign tag = page.tags | first %}
-    Tags: <a href="{{ site.url | append: '/tag/' | append: tag }}">{{ tag }}</a>
+    Last updated: {{ page.updated }},&nbsp;
+    {% if page.tags.size > 0 %}
+      {% assign tag = page.tags | first %}
+      Tag: <a href="{{ site.url | append: '/tag/' | append: tag }}">{{ tag }}</a>,&nbsp;
     {% endif %}
+    {{ page.url }}
   </div>
 </div>
 <div id="content">
