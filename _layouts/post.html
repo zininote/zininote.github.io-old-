@@ -10,7 +10,7 @@ layout: default
       {% assign tag = page.tags | first %}
       Tag: <a href="{{ site.url | append: '/tag/' | append: tag }}">{{ tag }}</a>,&nbsp;
     {% endif %}
-    {{ page.url }}
+    {{ site.url }}{{ page.url }}
   </div>
 </div>
 <div id="content">
