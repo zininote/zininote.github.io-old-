@@ -10,7 +10,12 @@ permalink: /test/test/test/
         </style>
     </head>
     <body>
-        <span id="hit"><embed src="https://zininote.pythonanywhere.com"/></span>
+        <span id="hit"></span>
     </body>
-    
+    <script>
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open('GET', 'https://hitcounter.pythonanywhere.com/count', false);
+        xmlHttp.send(null);
+        document.getElementById('hit').innerText = xmlHttp.responseText;
+    </script>
 </html>
