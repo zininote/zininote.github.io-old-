@@ -10,7 +10,7 @@ layout: default
     {% assign tag = page.tags | first %}
       Tag: <a href="{{ site.url | append: '/tag/' | append: tag }}">{{ tag }}</a>,
     {% endif %}
-    <span id="counter"><span id="counter-title"></span>Hits (Yesterday / Today / Total): <span id="counter-hits"></span></span>
+    <span id="counter"><span id="counter-title">Hits (Yesterday / Today / Total): </span><span id="counter-hits"></span></span>
     <!--<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url={{ site.url }}{{ page.url }}"/>-->
   </div>
 </div>
