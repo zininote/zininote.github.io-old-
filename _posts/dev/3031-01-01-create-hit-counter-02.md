@@ -114,7 +114,7 @@ def route_counter():
 ```
 {:.html}
 
-보통은 어떤 포스트를 열었을 때, 그 포스트의 Counter 가 보여야하므로, 위 `<Counter를붙이기원하는사이트의URL>` 부분에는 위 코드를 붙인 사이트의 주소를 기입해주면 된다. Jekyll 을 사용하는 깃허브 페이지에서는 `<% raw %>{{ site.url }}{{ page.url }}<% endraw %>` 이라는 템플릿을 붙이면 된다.
+보통은 어떤 포스트를 열었을 때, 그 포스트의 Counter 가 보여야하므로, 위 `<Counter를붙이기원하는사이트의URL>` 부분에는 위 코드를 붙인 사이트의 주소를 기입해주면 된다. Jekyll 을 사용하는 깃허브 페이지에서는 `{% raw %}{{ site.url }}{{ page.url }}{% endraw %}` 이라는 템플릿을 붙이면 된다.
 
 실제로 본인은 아래와 같이 사용하고 있다.
 
@@ -123,7 +123,7 @@ def route_counter():
 <span id="counter"><span id="counter-title">Hits (Yesterday / Today / Total): </span><span id="counter-hits"></span></span>
 
 <!-- 생략 -->
-<script src="https://<username>.pythonanywhere.com/counter?url=<% raw %>{{ site.url }}{{ page.url }}<% endraw %>"></script>
+<script src="https://<username>.pythonanywhere.com/counter?url={% raw %}{{ site.url }}{{ page.url }}{% endraw %}"></script>
 <script>
   document.getElementById('counter-hits').innerHTML = counter;
 </script>
