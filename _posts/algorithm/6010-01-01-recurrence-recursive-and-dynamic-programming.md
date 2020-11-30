@@ -2,7 +2,7 @@
 layout: post
 title: "점화식과 재귀함수와 동적계획법 관계 정리"
 updated: 2020-12-01
-categories: [algorithm,design]
+tags: [algorithm,design]
 ---
 
 ## 점화식
