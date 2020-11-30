@@ -65,7 +65,7 @@ print(rotate(arr, 2))     # ['G', 'H', 'A', 'B', 'C', 'D', 'E', 'F']
 
 이 알고리즘을 이용하여 `rotate(arr, 2)` 를 수행한다고 하면 아래처럼 도식화할 수 있다.
 
-![그림01](https://zini4u.github.io/img/algorithm/algorithm-0011-01-01-01.svg)
+![그림01](https://zininote.github.io/img/algorithm/algorithm-1010-01-01-01.svg)
 
 먼저, 오른쪽으로 로테이션이 되는 부분(하얀부분)과, Array 범위를 벗어나서 다시 왼쪽으로 붙게되는 부분(붉은부분)을 구분한다.
 
