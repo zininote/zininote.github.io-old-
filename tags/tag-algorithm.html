@@ -8,8 +8,8 @@ title: algorithm
   <h1>{{ page.title }} 태그 포스팅들</h1>
 </div>
 <div id="tag-content">
-    {% assign subs = "function" | split: "," %}
-    {% assign subs_desc = "Useful Functions:" | split: "," %}
+    {% assign subs = "design,function" | split: "," %}
+    {% assign subs_desc = "Algorithm Design:,Useful Functions:" | split: "," %}
     {% assign to = subs.size | minus: 1 %}
     
     {% for i in (0..to) %}
