@@ -42,5 +42,6 @@ def solution(board):
     # 넓이 리턴
     return int(np.max(b))**2
 ```
+{:.python}
 
 NumPy 모듈의 ndArray 자료형을 사용했다. ndenumerate 로 모든 데이터요소를 순회하는데, 불필요한 부분은 continue 구문으로 건너뛴다.
