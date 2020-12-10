@@ -40,7 +40,7 @@ img {vertical-align: bottom;}
 #content code,
 #content kbd,
 #content samp {font-family: 'Hack', 'NanumSquareRound', monospace; font-size: 16px; background-color: #eeeeee;}
-#content pre code {font-size: 14px; line-height: 1.3; background-color: transparent; margin: 0;}
+#content pre code {font-size: 14px; line-height: 24px; background-color: transparent; margin: 0;}
 
 #content pre {position: relative; padding-top: 18px;}
 #content pre:after {
