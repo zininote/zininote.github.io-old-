@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "배열 데이터요소 랜덤하게 셔플"
-updated: 2020-11-12
+updated: 2020-12-12
 tags: [algorithm,array]
 ---
 
