@@ -19,31 +19,31 @@ categories: [algorithm,array]
 
 예를들어, 아래와 같이 오름차순으로 정렬이 된 `a` 리스트가 있다고 해보자. 여기에서 찾고자 하는 `x` 값은 41 이라 해보자. 이 값이 어느 위치에 있는지를 알고자 한다.
 
-![그림00](https://zini4u.github.io/img/algorithm/algorithm-1030-01-01-00.svg)
+![그림00](https://zininote.github.io/img/algorithm/algorithm-1030-01-01-00.svg)
 
 리스트 범위의 앞을 `lo`, 가장 뒤를 `hi` 라 해보자. python 의 일반적인 범위 원칙에 따라 `lo` 는 0 을 `hi` 는 `len(a)` 를 가리킨다.
 
 이제 중간인덱스를 `mid` 라 해보자. `(lo+hi)//2` 로 계산할 수 있다.
 
-![그림01](https://zini4u.github.io/img/algorithm/algorithm-1030-01-01-01.svg)
+![그림01](https://zininote.github.io/img/algorithm/algorithm-1030-01-01-01.svg)
 
 `x` 와 중간값 `a[mid]` 를 비교해보자. `a[mid] < x` 이므로 `mid` 를 중심으로 앞의 범위는 지운다. 코드상으로는 `lo` 위치를 `mid` 의 다음 번호로 땡겨오는 작업을 하면 된다.
 
-![그림02](https://zini4u.github.io/img/algorithm/algorithm-0020-01-01-02.svg)
+![그림02](https://zininote.github.io/img/algorithm/algorithm-0020-01-01-02.svg)
 
 이제 다시 중간값을 찾는다. 이제는 `x < a[mid]` 이므로, 뒤의 범위를 지운다. 코드상으로는 `hi` 위치를 `mid` 로 땡겨오는 작업을 하면 된다.
 
-![그림03](https://zini4u.github.io/img/algorithm/algorithm-1030-01-01-03.svg)
-![그림04](https://zini4u.github.io/img/algorithm/algorithm-1030-01-01-04.svg)
+![그림03](https://zininote.github.io/img/algorithm/algorithm-1030-01-01-03.svg)
+![그림04](https://zininote.github.io/img/algorithm/algorithm-1030-01-01-04.svg)
 
 다시 중간값을 찾는다. `x < a[mid]` 이므로, 뒤의 범위를 지운다. 다시 `hi` 위치를 `mid` 로 땡겨오는 작업을 하면 된다.
 
-![그림05](https://zini4u.github.io/img/algorithm/algorithm-1030-01-01-05.svg)
-![그림06](https://zini4u.github.io/img/algorithm/algorithm-1030-01-01-06.svg)
+![그림05](https://zininote.github.io/img/algorithm/algorithm-1030-01-01-05.svg)
+![그림06](https://zininote.github.io/img/algorithm/algorithm-1030-01-01-06.svg)
 
 다시 중간값을 찾는다. `x == a[mid]` 가 되므로, 인덱스인 `mid` 를 리턴하면 된다.
 
-![그림07](https://zini4u.github.io/img/algorithm/algorithm-1030-01-01-07.svg)
+![그림07](https://zininote.github.io/img/algorithm/algorithm-1030-01-01-07.svg)
 
 만일 여기서도 `x` 를 못찾았다면, 다시 찾는 방법을 반복하는데, 해보면 `lo` 와 `hi` 가 같은 인덱스를 가리키게 된다. 이 때는 찾는 값이 결국 없었다는 의미가 된다.
 
