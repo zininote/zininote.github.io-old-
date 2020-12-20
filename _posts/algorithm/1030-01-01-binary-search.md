@@ -2,7 +2,7 @@
 layout: post
 title: "이진 탐색 알고리즘"
 updated: 2020-12-20
-categories: [algorithm,array]
+tags: [algorithm,array]
 ---
 
 ## 리스트 안에서 특정 요소 찾기
