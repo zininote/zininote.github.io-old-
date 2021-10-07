@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_algorithm
 title: "리스트에서, Index 순서를 유지하면서, 중복없는 고유한 요소만 남기기"
 updated: 2021-09-07
 tags: [algorithm,python]
