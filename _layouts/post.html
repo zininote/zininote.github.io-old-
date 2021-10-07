@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div id="page-title">
+    <h1>{{ page.title }}</h1>
+    <div>
+        Last updated: {{ page.updated }},
+        {% if page.tags.size > 0 %}
+            {% assign tag = page.tags | first %}
+                Tag: <a href="{{ site.url | append: '/tag/' | append: tag }}">{{ tag }}</a>
+        {% else %}
+            Tag: <a href="/">home</a>
+        {% endif %}
+    </div>
+</div>
+<div id="content">
+
+{{ content }} 
+
+</div>
+<div class="padding">&nbsp;</div>
+    <script src="https://utteranc.es/client.js"
+            repo="zininote/zininote.github.io"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+</script>

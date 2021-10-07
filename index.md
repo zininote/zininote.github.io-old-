@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+---
+layout: post
+title: "안녕하세요, 찌니노트 입니다."
+updated: 2021-10-07
+tags: [home]
+---
 
-You can use the [editor on GitHub](https://github.com/zininote/zininote.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+## About ME
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+이름은 찌니, 40대 아재, 갬성 떨어짐, 모 기업 기획팀 근무, 배불뚝이, 잘 안움직임, 매우 게으름, 만사 귀찮음 ...
 
-### Markdown
+## About 찌니노트
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+2010년대 초반부터 블로그를 운영해봤다. 티스토리, 네이버, 블로그스팟, 워드프레스 등등을 거쳐오다가, 2020년에 [깃허브](https://github.com/)를 알게되고는 이런저런 베타테스트 (?) 를 거쳐서, 2021년 10월 이 블로그를 다시 오픈했다.
 
-```markdown
-Syntax highlighted code block
+나이를 먹어감에따라 자주 깜빡깜빡하기에, 뭔가 중요한 내용이나 이런저런 관심사항들을 스터디하고 나서 어딘가에 적어두면 좋다고 느낄 때가 많아졌다. 마침 블로그 운영에도 관심이 있어 노트 대신 블로그를 활용해볼까도 했고, 본인의 이름인 "찌니" 에 뭔가를 적어두는 대상인 "노트" 를 이어붙여 본 블로그 이름을 짓게 되었다. (나름 그럴싸하다고 자축도 했다. 짝짝짝 👏👏👏) 그래서 블로그 주소도 [https://zininote.github.io](https://zininote.github.io) 로 정했다.
 
-# Header 1
-## Header 2
-### Header 3
+나중에 다시 꺼내보고 싶은 관심사항이나 개인적으로 스터디한 내용들 위주로 채워볼 생각이다. 큰 주제는 없이 이런저런 잡다한 것들이 될 것으로 보인다.
 
-- Bulleted
-- List
+나름 블로그 형태도 갖추고 소통을 위한 댓글 기능도 있지만, 지극히 개인적인 목적이 우선이라, 내용에 생략도 많고, 설명도 매우 불친절하다고 느낄 수도 있을 것이다. 아무런 사전고지나 사후설명 없이 포스팅이 수정되거나 삭제될 수도 있다. 더 심한 경우에는 일반적인 통설과는 달리 내 멋대로 해석하고 설명하여 혼란을 줄 수 있는 내용들도 있을 수 있다. 이에 대해선 아무쪼록 양해를 구하는 바이다.
 
-1. Numbered
-2. List
+상당히 게을러서 언제까지 이 블로그를 계속 운영할지 모르겠다. 중간에 나몰라라하면서 내팽겨칠지도 모른다. 하지만 일단은 재밌게 시작해볼까 한다. 이제 시작합니다!
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```python
+def sayhello():
+    print('Hello Blog! 🙋‍♂️🙋‍♀️')
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zininote/zininote.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+{:.python}

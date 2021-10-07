@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+        <link rel="manifest" href="/icons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <meta property="og:title" content="{{ site.title }}" />
+        <meta property="og:site_name" content="{{ site.title }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ site.url }}" />
+        <meta property="og:image" content="{{ site.url }}/icons/zininote_profile_800x420.png" />
+        <meta property="og:locale" content="ko_KR" />
+        <meta property=“og:description” content="{{ site.description }}" />
+        <link rel="stylesheet" href="/resource/style.css" />
+        <link rel="stylesheet" href="/highlightjs/highlightjs-style.css" />
+        <title>{{ site.title }}</title>
+    </head>
+    <body>
+        <div id="header">
+            <div>
+                <div id="header-title">{{ site.title }}</div>
+                <nav>
+                    <ul id="nav">
+                        <li><a href="/">home</a></li>
+                        {% for tag in site.tag_order %}
+                            <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="main">
+            <div>
+
+                {{ content }}
+
+            </div>
+        </div>
+        <div id="footer">
+            <div>
+                <div id="footer-msg">
+                    <div class="msg">This blog is powered by Github,</div><div class="msg">and designed by Zini.</div>
+                </div>
+            </div>
+        </div>
+        <!-- <script src="/highlightjs/core.min.js"></script>
+        <script src="/highlightjs/xml.js"></script>
+        <script src="/highlightjs/javascript.js"></script>
+        <script src="/highlightjs/css.js"></script>
+        <script src="/highlightjs/yaml.js"></script>
+        <script src="/highlightjs/bash.js"></script>
+        <script src="/highlightjs/excel.js"></script>
+        <script src="/highlightjs/vbnet.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/languages/excel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/languages/vbnet.min.js"></script>
+        <script src="/highlightjs/python.js"></script>
+        <script src="/highlightjs/pseudo.js"></script>
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script> -->
+        <script>
+            hljs.initHighlightingOnLoad();
+            // hljs.initLineNumbersOnLoad({singleLine: true, startFrom: 0});
+        </script>
+    </body>
+</html>
