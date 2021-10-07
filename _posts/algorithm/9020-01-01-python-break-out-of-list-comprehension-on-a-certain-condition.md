@@ -1,5 +1,5 @@
 ---
-layout: post_algorithm
+layout: post
 title: "특정한 조건일 때, List Comprehension 순회 중간에 break 하기"
 updated: 2021-09-07
 tags: [algorithm,python]
