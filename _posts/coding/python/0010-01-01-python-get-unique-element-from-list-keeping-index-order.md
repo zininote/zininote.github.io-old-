@@ -2,7 +2,7 @@
 layout: post
 title: "리스트에서, Index 순서를 유지하면서, 중복없는 고유한 요소만 남기기"
 updated: 2021-09-07
-tags: [algorithm,python]
+tags: [coding,python]
 ---
 
 ## 중복 없애고 고유한 요소만 남기기
