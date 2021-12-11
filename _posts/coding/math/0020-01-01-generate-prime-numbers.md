@@ -26,7 +26,7 @@ var P = Array(n+1).fill(1)
 P[0] = P[1] = 0
 
 for (var i = 2; i < n/2+1; i++) {
-	if (P[i]) for (var j = i*i; j <= n; j += i) P[j] = 0
+    if (P[i]) for (var j = i*i; j <= n; j += i) P[j] = 0
 }
 ```
 {:.javascript}
