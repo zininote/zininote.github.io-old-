@@ -24,7 +24,7 @@ x * y == gcd(x, y) * lcm(x, y)
 
 ## gcd, lcm 코드
 
-```js
+```javascript
 var gcd = (x, y) => y ? gcd(y, x%y) : x
 var lcm = (x, y) => x*y / gcd(x, y)
 ```
@@ -36,7 +36,7 @@ var lcm = (x, y) => x*y / gcd(x, y)
 
 예를들어, 자연수 a, b, c, d 의 gcd (혹은 lcm) 을 구한다고 해보자. 먼저, a 와 b 의 gcd (혹은 lcm) 를 구하고, 이 결과와 c 의 gcd (혹은 lcm) 을 구하고, 다시 이 결과와 d 의 gcd (혹은 lcm) 를 구하면 된다.
 
-```js
+```javascript
 [a, b, c, d].reduce((a, x) => gcd(a, x))
 [a, b, c, d].reduce((a, x) => lcm(a, x))
 ```
