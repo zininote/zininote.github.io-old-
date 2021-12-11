@@ -28,7 +28,7 @@ var gen_combis = function*(A, r) {
     for (var x of fn([])) yield x
 }
 ```
-{.javascript}
+{:.javascript}
 
 안쪽에 있는 fn 제너레이터가 재귀방식으로 케이스를 생성해낸다.
 
