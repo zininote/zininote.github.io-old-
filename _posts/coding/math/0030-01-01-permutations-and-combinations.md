@@ -25,7 +25,7 @@ def gen_combis(A, r):
     
     while S:
         V = S.pop()
-        if len(V) == r: yield [A[x] for x in V]
+        if len(V) == r: yield (A[x] for x in V)
         else:
             for i in range(len(A)-1, (V[-1] if V else -1), -1):
                 S += [*V, i],
