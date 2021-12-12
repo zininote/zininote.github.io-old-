@@ -66,14 +66,3 @@ print(arr)    # [1, 2, 3, 4, 5, 4, 3, 2, 1]
 `x < 4` 가 더 이상 True 가 아닐 때, `g.close()` 구문이 실행된다. close 함수는 GeneratorExit 예외를 발생시키며 제너레이터 동작을 중단시킨다. 순회 대상 자체를 변형하는 것이 아니기 때문에, Comprehension 순회 도중 끊어도 원래의 arr 리스트는 유지가 된다.
 
 그리고 제너레이터로 감싸기만 하면 되기 때문에, 튜플, 딕셔너리, set 자료형에도 얼마든지 적용할 수 있다.
-
-추가로 아래처럼 사용하면, arr 리스트를 g 제너레이터로 감싸는 구문 자체도 List Comprehension 에 포함시켜 버릴 수 있다.
-
-```python
-arr = [1, 2, 3, 4, 5, 4, 3, 2, 1]
-
-print([x for x in (g := (x for x in arr), g)[-1] if x < 4 or g.close()])    # [1, 2, 3]
-```
-{:.python}
-
-이 코드는 := 연산자가 사용되었기 때문에, Python 3.8 버전 이상에서만 사용할 수 있다. `(g := (x for x in arr), g)[-1]` 구문이 이해가 잘 안된다면, [별도 포스팅](/post/python-use-statement-alternative-in-lambda-function)을 참고해보기 바란다.
