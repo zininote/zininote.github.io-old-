@@ -24,18 +24,22 @@ x * y == gcd(x, y) * lcm(x, y)
 
 ## gcd, lcm 코드
 
-```python
-gcd = lambda x, y: gcd(y, x%y) if y else x
-lcm = lambda x, y: x*y // gcd(x, y)
+```javascript
+var gcd = (x, y) => y ? gcd(y, x%y) : x
+var lcm = (x, y) => x*y / gcd(x, y)
 ```
-{:.python}
+{:.javascript}
 
-참고로 위에서 호제법을 언급하면서, x > y 라는 단서를 달았지만, 코드 내부에는 이에 대한 판별식이 전혀 없다. 해보면 알 수 있지만 x < y 일 때의 첫 재귀호출의 결과는 두 수를 바꾸는 것이 된다. 그래서 곧바로 x > y 가 되기 때문에 굳이 판별식을 넣을 필요가 없다.
+참고로 위에서 호제법을 언급하면서, x > y 라는 단서를 달았지만, 코드 내부에는 이에 대한 판별식이 전혀 없다. 만일 x < y 라면 x%y == x 가 되는데, 첫 재귀호출의 결과는 두 수를 바꾸는 것이 된다. 그래서 곧바로 x > y 가 되기 때문에 굳이 판별식을 넣을 필요가 없다.
 
-## 3 개 이상 수들의 gcd, lcm
+## 3 개 이상 수들의 gcd, lcm 코드
 
 예를들어, 자연수 a, b, c, d 의 gcd (혹은 lcm) 을 구한다고 해보자. 먼저, a 와 b 의 gcd (혹은 lcm) 를 구하고, 이 결과와 c 의 gcd (혹은 lcm) 을 구하고, 다시 이 결과와 d 의 gcd (혹은 lcm) 를 구하면 된다.
 
-## Python 의 gcd, lcm
+```javascript
+[a, b, c, d].reduce((a, x) => gcd(a, x))
+[a, b, c, d].reduce((a, x) => lcm(a, x))
+```
+{:.javascript}
 
-버전 3.9 부터는 math 모듈에서 gcd, lcm 함수를 제대로 지원한다. 3 개 이상 수들의 gcd, lcm 도 구할 수 있다.
+Javascript 에서는 reduce 함수로 이를 구현할 수 있다.
