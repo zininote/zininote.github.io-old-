@@ -10,7 +10,7 @@ tags: [coding,math]
 [위키피디아](https://ko.wikipedia.org/wiki/%EA%B8%B0%EC%88%98%EB%B2%95#%EC%A7%84%EC%88%98) 링크로 들어가 아랫부분을 찾아보면 진수를 변환하는 방법이 나오는데 생각보다 심플하다.
 
 ```pseudo
-10 진수를 r 진수로 변환: 10진수를 계속 x 로 나눈 나머지들을 이어붙임
+10 진수를 r 진수로 변환: 10 진수를 계속 x 로 나눈 나머지들을 이어붙임
 r 진수를 10 진수로 변환: r 진수, 제일 뒷자리 숫자부터, (숫자 * r ** 자릿수) 계산하여 합산
 ```
 {:.pseudo}
@@ -41,4 +41,4 @@ console.log(n.toString(32), n.t(32))    // 7v 7v
 var s = 'mn'
 console.log(parseInt(s, 36), s.t(36))   // 815 815
 ```
-{:.javaqscript}
+{:.javascript}
