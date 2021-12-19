@@ -24,7 +24,7 @@ def isValid(self, s: str) -> bool:
   
     return False if s else True
 ```
-{;python}
+{:.python}
 
 정규식으로 s 에서 열린/닫힌 괄호 쌍을 계속 지워나간다. 더 이상 지워지지않을 때, 빈 문자열이라면 True 가 된다.
 
@@ -45,7 +45,7 @@ def isValid(self, s: str) -> bool:
 
     return False if stack else True
 ```
-{:python}
+{:.python}
 
 stack 을 상정하고, 여는 괄호일때는 stack 을 채우고, 닫힌 괄호일때는 stack 의 가장 후미와 비교하여 올바른 괄호 쌍일 때 지워나간다. 올바르지않은 괄호쌍이라면 즉시 False 를 리턴한다.
 
