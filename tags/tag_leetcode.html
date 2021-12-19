@@ -8,8 +8,8 @@ title: leetcode
   <h1>{{ page.title }} 태그 포스팅들</h1>
 </div>
 <div id="tag-content">
-    {% assign subs = "array|graph|math" | split: "|" %}
-    {% assign subs_desc = "Array and Lists:|Node and Graphs:|Mathematics:" | split: "|" %}
+    {% assign subs = "array|string|graph|math" | split: "|" %}
+    {% assign subs_desc = "Array and Lists:|Strings:|Node and Graphs:|Mathematics:" | split: "|" %}
     {% assign to = subs.size | minus: 1 %}
     
     {% for i in (0..to) %}
