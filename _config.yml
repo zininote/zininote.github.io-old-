@@ -2,7 +2,7 @@ title: "찌니노트"
 description: "이것저것 관심있는 것들을 적어두는 찌니의 노트"
 url: "https://zininote.github.io"
 permalink: /post/:title
-tag_order: [coding,msoffice]
+tag_order: [leetcode,msoffice]
 
 markdown: kramdown
 kramdown:
