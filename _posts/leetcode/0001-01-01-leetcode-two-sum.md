@@ -15,26 +15,26 @@ tags: [leetcode,array,hashtable]
 
 ## Brute Force
 
-'''python
+```python
 def twoSum(self, nums: List[int], target: int) -> List[int]:
     for i, x in enumerate(nums[:-1]):
         for j, y in enumerate(nums[i+1:], i+1):
             if x+y == target: return [i, j]
-'''
+```
 {:.python}
 
 이중루프를 사용하여 시간복잡도는 O(n^2) 이다. 시간은 3796 ms 였다.
 
 ## Hash Table
 
-'''python
+```python
 def twoSum(self, nums: List[int], target: int) -> List[int]:
     h = {}
     for i, x in enumerate(nums):
         y = target-x
         if y in h: return [h[y], i]
         h[x] = i
-'''
+```
 {:.python}
 
 h 딕셔너리를 Hash Table 저장소로 상정하였다. 루프 순회할 때 `{값: 인덱스}` 형태로 저장해두는 용도다.
