@@ -2,7 +2,7 @@
 layout: post
 title: "35. Search Insert Position"
 updated: 2021-12-21
-tags: [leetcode,array,binarysearch]
+tags: [leetcode,array,binary_search]
 ---
 
 ## 문제
