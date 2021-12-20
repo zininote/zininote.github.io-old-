@@ -31,3 +31,5 @@ def searchInsert(self, nums: List[int], target: int) -> int:
 [이진 탐색](https://namu.wiki/w/%EC%9D%B4%EC%A7%84%20%ED%83%90%EC%83%89) (Binary Search) 은 사전에서 단어를 찾을 때 흔히 사용하는 방식이다.
 
 중간값 m 과 양 극단 값 i, j 가 가리키는 값을 매 반복 턴마다 비교하여 해답을 구해간다.
+
+시간은 44 ms 였다.
