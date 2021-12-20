@@ -2,7 +2,7 @@
 layout: post
 title: "21. Merge Two Sorted Lists"
 updated: 2021-12-21
-tags: [leetcode,graph,linkedlist]
+tags: [leetcode,graph,linked_list]
 ---
 
 ## 문제
