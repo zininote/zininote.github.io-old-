@@ -7,7 +7,7 @@ tags: [leetcode,string,stack]
 
 ## 문제
 
-[https://leetcode.com/problems/valid-parentheses/description/](https://leetcode.com/problems/valid-parentheses/description/)
+[https://leetcode.com/problems/valid-parentheses/](https://leetcode.com/problems/valid-parentheses/)
 
 소/중/대 괄호만으로 이뤄진 s 문자열이 있을 때, 여는괄호 닫힌괄호가 올바르게 쌍을 이뤄 표현되어있는지 여부를 리턴하는 문제다.
 

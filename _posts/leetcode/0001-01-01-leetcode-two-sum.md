@@ -7,7 +7,7 @@ tags: [leetcode,array,hashtable]
 
 ## 문제
 
-[https://leetcode.com/problems/two-sum/description/](https://leetcode.com/problems/two-sum/description/)
+[https://leetcode.com/problems/two-sum/](https://leetcode.com/problems/two-sum/)
 
 정수들을 요소로 가진 nums 배열과, target 정수가 주어질 때, 합이 target 이 되는 두 요소의 인덱스를 리턴하는 문제다.
 
