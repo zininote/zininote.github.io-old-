@@ -9,7 +9,7 @@ tags: [leetcode,graph,linkedlist]
 
 [https://leetcode.com/problems/merge-two-sorted-lists/](https://leetcode.com/problems/merge-two-sorted-lists/)
 
-각각 오름차순으로 정렬된 연결리스트가 두개가 주어지면, 오름차순을 유지한채 하나의 연결리스트로 만들어 리턴하는 문제다.
+각각 오름차순으로 정렬된 연결리스트 두개가 주어지면, 오름차순을 유지한 채 하나의 연결리스트로 만들어 리턴하는 문제다.
 
 ## Recursive
 
@@ -27,7 +27,7 @@ def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) ->
 ```
 {:.python}
 
-두 리스크가 끝이 아니라면 값을 비교해서 보다 작은 노드를 리턴하고 다시 재귀호출을 하는 구조다.
+두 리스크가 끝이 아니라면 값을 비교해서 보다 작은 노드 쪽을 재귀호출로 연결하고 리턴하는 구조다.
 
 시간은 36 ms 였다.
 
@@ -49,6 +49,6 @@ def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) ->
 ```
 {:.python}
 
-재귀호출이 아닌 반복문 방식의 풀이다. 노드를 가리키는 n 을 계속 전진시키면서 보다 작은 노드를 연결하고 계속 전진시켜 간다.
+재귀호출이 아닌 반복문 방식의 풀이다. 노드를 가리키는 n 을 계속 전진시키면서 보다 작은 노드를 계속 연결해간다.
 
 시간은 36 ms 였다.
