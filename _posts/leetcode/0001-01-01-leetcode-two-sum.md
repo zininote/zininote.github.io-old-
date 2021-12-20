@@ -2,7 +2,7 @@
 layout: post
 title: "1. Two Sum"
 updated: 2021-12-20
-tags: [leetcode,array,hashtable]
+tags: [leetcode,array,hash_table]
 ---
 
 ## 문제
