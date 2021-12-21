@@ -9,7 +9,7 @@ tags: [leetcode,design,dynamic_programming,divide_and_conquer]
 
 [https://leetcode.com/problems/maximum-subarray/description/](https://leetcode.com/problems/maximum-subarray/description/)
 
-주어지는 nums 배열에서, 연속된 수들로 부분합을 구했을 때, 가장 큰 값을 리턴하는 문제다.
+주어지는 nums 배열에서, 연속된 수들로 부분합들을 구했을 때, 가장 큰 부분합을 리턴하는 문제다.
 
 ## Brute Force
 
@@ -28,7 +28,7 @@ def maxSubArray(self, nums: List[int]) -> int:
 
 이중루프로 구현했다. 첫번째 루프에서 부분합을 구할 시작인덱스 i 를 정하면, 두번째 루프에서 i 인덱스 이후를 순회하면서 나올 수 있는 부분합을 모두 구한 뒤, 가장 큰 값을 저장해둔다.
 
-마지막에는 각 i 인덱스로부터의 부분합들 중 가장 큰 값을 리턴하는 구조다.
+마지막에는 각 i 인덱스로부터의 부분합들 중 가장 큰 값인 최대부분합을 리턴하는 구조다.
 
 이 방식은 시간초과로 문제를 통과할 수 없었다.
 
@@ -58,7 +58,7 @@ subs[i] = max(nums[i], subs[i-1]+nums[i])    # Recurrence Equation
 ```
 {:.pseudo}
 
-Brute Force 풀이에서는 i 부터의 최대값을 구하는 것에 반해, Kadane's Algorithm 에서는 i 까지의 부분합을 구하는 방식이다.
+Brute Force 풀이에서는 i 부터의 최대부분합을 구하는 것에 반해, Kadane's Algorithm 에서는 i 까지의 최대부분합을 구하는 방식이다.
 
 i 의 부분합이 최대가 되려면, i-1 까지의 최대값에 nums[i] 를 더한것이 최대가 되는지 아닌지만 알면 되기에 위와 같은 점화식이 구현된다.
 
@@ -85,7 +85,7 @@ def maxSubArray(self, nums: List[int]) -> int:
 nums 를 계속 둘로 쪼개고 난 뒤, 쪼개진 부분배열들을 다시 조립할 때 최대부분합을 계속 갱신해가는 구조다. 아래와 같이 이해할 수 있다.
 
 ```pseudo
-# 두 배열 L, R 이 있을 때, 두 배열을 이은 상태에서 부분합의 최대 (maxsub) 는
+# 두 배열 L, R 이 있을 때, 두 배열을 연결한 배열 L+R 의 최대부분합 (maxsub) 은
 # 아래와 같이 기존 L 의 maxsub (lm), 기존 R 의 maxsub (rm), L 과 R 을 이어붙였을 때의 maxsub (lr+rl) 중 최대값이 됨
 
 L                       R
@@ -108,7 +108,7 @@ L                       R
 {:.pseudo}
 
 ```pseudo
-# 두 배열이 있을 때, 가장 오른쪽 값이 포함된 상태에서의 maxsub 은
+# 두 배열이 있을 때, 가장 오른쪽 값이 포함된 상태에서의 maxsub (lr) 은
 # 아래와 같이 기존 R 의 오른쪽으로부터의 maxsub (rr), L 과 R 을 이어붙였을 때의 오른쪽으로부터의 maxsub (lr+rt) 중 최대값이 됨
 
 L                       R
@@ -130,7 +130,7 @@ L                       R
 {:.pseudo}
 
 ```pseudo
-# 두 배열이 있을 때, 가장 왼쪽 값이 포함된 상태에서의 maxsub 은
+# 두 배열이 있을 때, 가장 왼쪽 값이 포함된 상태에서의 maxsub (rl) 은
 # 아래와 같이 기존 L 의 왼쪽으로부터의 maxsub (ll), L 과 R 을 이어붙였을 때의 왼쪽으로부터의 maxsub (lt+rl) 중 최대값이 됨
 
 L                       R
