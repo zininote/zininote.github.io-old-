@@ -100,7 +100,7 @@ L                       R
       \         \
        \         # L 배열의 가장 오른쪽에서부터의 maxsub
         \        
-         # L 배열의 maxsub (lm)
+         # L 배열의 maxsub
          
 # L+R maxsub 은 L 의 가장 오른쪽 값 (xm) 이 포함된 상태에서의 maxsub 인 lr 과,
 # R 의 가장 왼쪽 값인 y1 이 포함된 상태에서의 maxsub 인 rl 의 값을 알아야 함
