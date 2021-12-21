@@ -1,0 +1,37 @@
+---
+layout: post
+title: "53. Maximum Subarray"
+updated: 2021-12-21
+tags: [leetcode,design,dynamic_programming,divide_and_conquer]
+---
+
+## 문제
+
+[https://leetcode.com/problems/maximum-subarray/description/](https://leetcode.com/problems/maximum-subarray/description/)
+
+주어지는 nums 배열에서, 연속된 수들로 부분합을 구했을 때, 가장 큰 값을 리턴하는 문제다.
+
+## Brute Force
+
+```python
+def maxSubArray(self, nums: List[int]) -> int:
+    subs = []
+    for i in range(len(nums)):
+        tmp = []
+        for x in nums[i:]:
+            tmp += [(tmp[-1] if tmp else 0) + x]
+        subs += [max(tmp)]
+    
+    return max(subs)
+```
+{:.python}
+
+이중루프로 구현했다. 첫번째 루프에서 부분합을 구할 시작인덱스 i 를 정하면, 두번째 루프에서 이후의 부분합을 모두 구한 뒤, 가장 큰 값을 저장해둔다.
+
+마지막에는 각 i 인덱스로부터의 부분합들 중 가장 큰 값을 리턴하는 구조다.
+
+이 방식은 시간초과로 문제를 통과할 수 없었다.
+
+## Dynamic Programming (Kadane's Algorithm)
+
+## Divide and Conquer
