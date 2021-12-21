@@ -33,6 +33,7 @@ n 개의 계단이 있다고 하면, n-2 개의 계단까지 오른 뒤 2 계단
 fn(1) = 1, fn(2) = 2         # Initial Values
 fn(n) = fn(n-2) + fn(n-1)    # Recurrence Equation
 ```
+{:.pseudo}
 
 이를 내부의 fn 재귀함수로 구현하였다.
 
@@ -60,7 +61,7 @@ def climbStairs(self, n: int) -> int:
 
 Python 의 데코레이션 문법을 사용하여 Memoization 을 구현했다.
 
-h 딕셔너리를 fn 함수의 결과 저장소로 활용하여, 이미 구한 fn(n) 이 있으면 그 깂을 사용하기에, 과도한 재귀호출을 방지할 수 있다.
+h 딕셔너리를 fn 함수의 결과 저장소로 활용하여, 이미 구한 fn(n) 이 있으면 그 값을 사용하기에, 과도한 재귀호출을 방지할 수 있다.
 
 시간은 28 ms 였다.
 
