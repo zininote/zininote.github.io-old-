@@ -103,4 +103,4 @@ def rotate(self, nums: List[int], k: int) -> None:
  +-----------------------+
 [6, 7, 8, 9, 1, 2, 3, 4, 5]
 ```
-{:.python}
+{:.pseudo}
