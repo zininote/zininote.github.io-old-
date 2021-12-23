@@ -11,7 +11,7 @@ tags: [coding,algorithm,binary_search]
 
 사전에서 단어를 찾는 것과 같이 실생활에서도 이런 탐색 방법은 누구나 한번쯤은 사용해봤을 것이다. 이해하기도 어렵지 않은데, 코드로 작성할 때는 디테일한 부분 구현이 은근히 까다롭게 다가온다.
 
-## 코드 구현
+## 이진탐색 코드
 
 Leetcode 의 [704. Binary Search](https://leetcode.com/problems/binary-search/) 는, 오름차순 정렬된 nums 숫자배열과, target 숫자가 주어지면, nums 안에서 target 숫자의 위치 (인덱스) 를 찾는 문제다. 찾으면 그 위치를, 못 찾으면 -1 을 리턴해야 한다.
 
@@ -65,6 +65,27 @@ while 반복문에 들어서면, i 와 j 의 중간에 위치한 인덱스 m 을
 하나만 더 참고하자면, `nums[m] < target` 일 때는 i 를 조정하고, 아닐 때는 j 를 조정한다고 했다. 만일 nums 가 [2, 2, 2, 2, 2], target 이 2 와 같이 주어진다면 위 알고리즘은 어떻게 동작할까? (물론 문제에서는 nums 안의 숫자들은 모두 유일하다고 했기 때문에 이런 케이스가 주어지지는 않는다.)
 
 `nums[m] == target` 인 상황이 오면, if 규칙에 따라 j 를 조정한다. 그리고 `i < j` 인 상황이 유지되는한 while 반복문은 계속 실행된다. 즉, i == j 가 될 때까지 j 가 계속 조정되며, i 와 j 는 연속된 2 의 가장 왼쪽 인덱스를 가리키게 된다.
+
+## Recursive 코드
+
+위 Leetcode 문제를 재귀적 방식으로 바꿔 본 풀이다. 핵심적인 부분이 fn 재귀함수로 구현되었고, 기본적인 이진탐색 로직은 동일하다.
+
+```
+def search(self, nums: List[int], target: int) -> int:
+
+    def fn(A, t, i=0, j=None):
+        if j is None: j = len(A)
+
+        if i == j: return i
+
+        m = i + (j-i)//2
+        if A[m] < t: return fn(A, t, m+1, j)
+        else: return fn(A, t, i, m)
+
+    res = fn(nums, target)
+    return res if res < len(nums) and nums[res] == target else -1
+```
+{:.python}
 
 ## Python 의 bisect 모듈
 
