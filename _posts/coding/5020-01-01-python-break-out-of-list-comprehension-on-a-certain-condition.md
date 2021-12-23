@@ -6,7 +6,7 @@ tags: [coding,python]
 ---
 
 ## Comprehension 표현식과 break
-
+ 
 Comprehension 표현식은, 어떤 Iterable 개체를 처음부터 끝까지 순회하면서 이런저런 처리를 손쉽게 할 수 있도록 해주는 Python 의 강력한 기능이다.
 
 어떤 특정한 상황에서는 순회 중간에 끊어버리고 싶을 때가 있는데, for 나 while 반복문에서 사용하는 break 를 사용하면 에러가 발생한다. break 는 Comprehension 표현식이 요구하는 Expression 이 아닌 Statement 이기 때문이다.

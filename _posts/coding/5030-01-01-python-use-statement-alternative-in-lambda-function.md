@@ -6,7 +6,7 @@ tags: [coding,python]
 ---
 
 ## Expression 만 허용하는 Lambda 함수식
-
+ 
 함수를 생성하는 def 구문 대신, 간편하게 함수를 생성해주는 lambda 구문을 사용할 때가 있다. 다른 언어의 익명함수와 비슷한데 Python 에서는 Expression 만 허용한다. 즉 lambda 함수식 안에는 변수에 값을 대입, break, return, while, global 등등 사용이 불가하다. (참고로 무엇이 Statement 이고, 무엇이 Expression 인지 긴가민가하다면 [Python 공식문서](https://docs.python.org/ko/3/reference/index.html)에서, 6, 7, 8 항목을 살펴보기 바란다.)
 
 ## Def 함수식을 Lambda 함수식으로 전환
