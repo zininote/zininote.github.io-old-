@@ -43,28 +43,20 @@ def fib(self, n: int) -> int:
 
 이와 같은 비효율을 보완하기 위한 것이 [메모이제이션](https://namu.wiki/w/%EB%A9%94%EB%AA%A8%EC%9D%B4%EC%A0%9C%EC%9D%B4%EC%85%98)이다. 한번 구한 계산은 기억해두고 있다가, 다시 사용하는 방식이다.
 
-Python 의 데코레이션 문법을 사용하여 메모이제이션을 구현하여 위 문제를 다시 풀어볼 수 있다.
-
 ```python
 def fib(self, n: int) -> int:
-    def memoize(f):
-        h = {}
-
-        def wrapper(n):
-            if n not in h: h[n] = f(n)
-            return h[n]
-
-        return wrapper
-
-    @memoize
-    def f(n):
-        return n if n < 2 else f(n-2) + f(n-1)
-
+    def f(n, h=None):
+        if h is None: h = {}
+        
+        if n not in h:
+            h[n] = n if n < 2 else f(n-2, h) + f(n-1, h)
+        return h[n]
+    
     return f(n)
 ```
 {:.python}
 
-h 딕셔너리를 일종의 기억장소로 사용하여, 한번 계산한 f(n) 값을 저장해 둔다. 실제로 Leetcode 의 풀이 시간을 비교하면 10 배 이상 빠른 것을 볼 수 있었다.
+h 딕셔너리를 일종의 기억장소로 사용하여, 한번 계산한 f(n) 값을 저장해 둔다. 실제로 Leetcode 의 풀이 시간을 원래 풀이와 비교하면 10 배 이상 빠른 것을 볼 수 있었다.
 
 ## 다이나믹 프로그래밍
 
@@ -100,3 +92,5 @@ def fib(self, n: int) -> int:
     return f(n)
 ```
 {:.python}
+
+Python 의 데코레이션 문법을 사용하도록 고안되어있다.
