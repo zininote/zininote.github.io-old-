@@ -7,9 +7,9 @@ tags: [coding,algorithm]
 
 ## 점화식
 
-고등학교 수학에서 다루는 [점화식](https://namu.wiki/w/%EC%A0%90%ED%99%94%EC%8B%9D)은 수열과 같은 관계를 초기값 (Initial Value) 와 일반항 (Recurrence Equation) 으로 나타내어 문제를 해결하는 방식이다.
+고등학교 수학에서 다루는 [점화식](https://namu.wiki/w/%EC%A0%90%ED%99%94%EC%8B%9D) (Rcurrence Relation) 은 수열과 같은 관계를 초기값 (Initial Value) 와 일반항 (Recurrence Equation) 으로 나타내어 문제를 해결하는 방식이다.
 
-어떤 문제를 점화식으로 나타낼 수 있을 때, 프로그래밍에서는 메모이제이션 또는 다이나믹 프로그래밍으로 해결하고는 한다.
+어떤 문제를 점화식으로 나타낼 수 있을 때, 프로그래밍에서는 메모이제이션 또는 다이나믹 프로그래밍 방법으로 해결하고는 한다.
 
 ## 피보나치 수열
 
@@ -19,7 +19,7 @@ Leetcode 의 [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-num
 
 ```pseudo
 f(0) = 0, f(1) = 1        # Initial Value
-f(i) = f(i-2) + f(i-1)    # Recurrence Equation
+f(n) = f(n-2) + f(n-1)    # Recurrence Equation
 ```
 {:.pseudo}
 
@@ -75,7 +75,7 @@ def fib(self, n: int) -> int:
 ```
 {:.python}
 
-f 를 함수 대신 리스트로 나타냈다. for 반복문으로 낮은 단계부터 차곡차곡 계산해 나가는 방식이다.
+f 를 함수 대신 리스트로 나타냈다. for 반복문으로 낮은 단계부터 차곡차곡 계산해 나간다.
 
 ## Python 과 메모이제이션
 
