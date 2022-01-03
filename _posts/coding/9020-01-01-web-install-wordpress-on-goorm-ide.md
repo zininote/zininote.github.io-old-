@@ -1,9 +1,14 @@
 ---
 layout: post
 title: "구름 IDE 에 워드프레스 설치하고 사용하기"
-updated: 2020-11-21
+updated: 2021-01-03
 tags: [coding,web]
 ---
+
+## 2021-01-03 Update
+
+오늘 살펴보니, 구름 IDE 에서 이제 Wordpress 개발 템플릿을 21년 12월부터 제공하기 시작했다고 한다. [goormIDE 릴리즈노트](https://blog.goorm.io/goormide-release-note-december-2021/) 를 참고하자. 아래 글은 이제 필요 없을 듯~
+
 
 ## 구름 IDE
 
