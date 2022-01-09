@@ -7,7 +7,7 @@ tags: [coding,web]
 
 ## Ubuntu 와 Python
 
-Ubuntu 를 설치하면 기본으로 Python 이 설치되어 있다. [구름 IDE](https://ide.goorm.io/) 에서 Python 연습을 위해 Black 로 Ubuntu 18.04 컨테이너를 생성했는데, 기본으로 설치되어있는 Python 3 의 버전이 3.6.8 이었다. 업그레이드가 필요했다.
+Ubuntu 를 설치하면 기본으로 Python 이 설치되어 있는 걸 볼 수 있다. [구름 IDE](https://ide.goorm.io/) 에서 Python 연습을 위해 Black 로 Ubuntu 18.04 컨테이너를 생성했는데, 기본으로 설치되어있는 Python 3 의 버전이 3.6.8 이었다. 업그레이드가 필요했다.
 
 ## Python 3.10 설치
 
