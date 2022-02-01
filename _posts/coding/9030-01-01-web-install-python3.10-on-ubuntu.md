@@ -17,8 +17,8 @@ Ubuntu 를 설치하면 기본으로 Python 이 설치되어 있는 걸 볼 수 
 sudo apt update
 sudo apt install software-properties-common -y
 sudo add-apt-repository ppa:deadsnakes/ppa -y
-sudo apt install python3.10
-sudo apt install python3.10-distutils
+sudo apt install python3.10 -y
+sudo apt install python3.10-distutils -y
 wget https://bootstrap.pypa.io/get-pip.py
 python3.10 get-pip.py
 ```
